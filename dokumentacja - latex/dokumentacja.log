@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  14 DEC 2015 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  14 DEC 2015 22:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -803,47 +803,42 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 9.
  [3
 
-]
-Overfull \hbox (21.94472pt too wide) in paragraph at lines 54--55
-[]\OT4/cmr/m/n/10.95 transakcje: trans-ak-cja[]id, klient[]id, ad-res[]wysyªki,
- kwo-ta[]zamowienia, kwo-ta[]wplacona,
- []
-
-[4] <fig/use_case_diagram.png, id=105, 789.70032pt x 527.72156pt>
+] [4] [5]
+<fig/use_case_diagram.png, id=108, 789.70032pt x 527.72156pt>
 File: fig/use_case_diagram.png Graphic file (type png)
 
 <use fig/use_case_diagram.png>
-Package pdftex.def Info: fig/use_case_diagram.png used on input line 74.
+Package pdftex.def Info: fig/use_case_diagram.png used on input line 126.
 (pdftex.def)             Requested size: 426.79134pt x 285.20697pt.
 
-Overfull \hbox (10.7269pt too wide) in paragraph at lines 74--75
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 126--127
  [][] 
  []
 
-<fig/klasy.png, id=106, 783.67781pt x 464.4853pt>
+<fig/klasy.png, id=109, 783.67781pt x 464.4853pt>
 File: fig/klasy.png Graphic file (type png)
  <use fig/klasy.png>
-Package pdftex.def Info: fig/klasy.png used on input line 81.
+Package pdftex.def Info: fig/klasy.png used on input line 133.
 (pdftex.def)             Requested size: 426.79134pt x 252.95874pt.
 
-Overfull \hbox (10.7269pt too wide) in paragraph at lines 81--82
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 133--134
  [][] 
  []
 
-) (./bibrystab.tex [5pdfTeX warning (ext4): destination with the same identifie
+) (./bibrystab.tex [6pdfTeX warning (ext4): destination with the same identifie
 r (name{figure.1.1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \begin {thebibliography}{}
-                                <./fig/use_case_diagram.png>] [6pdfTeX warning 
+                                <./fig/use_case_diagram.png>] [7pdfTeX warning 
 (ext4): destination with the same identifier (name{figure.1.2}) has been alread
 y used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \begin {thebibliography}{}
-                                <./fig/klasy.png>] [7
+                                <./fig/klasy.png>] [8
 
 ] (./dokumentacja.lof
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -857,7 +852,7 @@ LaTeX Font Info:    External font `plex10' loaded for size
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
 
-[8
+[9
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
@@ -865,17 +860,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
 Package rerunfilecheck Info: File `dokumentacja.out' has not changed.
-(rerunfilecheck)             Checksum: 8BE8436592D97E01B89255B96D5673BA;835.
+(rerunfilecheck)             Checksum: 0428A49997493521E923235A451E1C72;834.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
  ) 
 Here is how much of TeX's memory you used:
  8757 strings out of 493054
- 122619 string characters out of 6138326
+ 122618 string characters out of 6138326
  241198 words of memory out of 5000000
  12073 multiletter control sequences out of 15000+600000
  16278 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,52p,342b,408s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,11n,52p,342b,467s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}{c:/texlive/2015/texm
 f-dist/fonts/enc/dvips/pl/plrm.enc}<c:/texlive/2015/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plb
@@ -883,10 +878,10 @@ x10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texliv
 e/2015/texmf-dist/fonts/type1/public/pl/plbx9.pfb><c:/texlive/2015/texmf-dist/f
 onts/type1/public/pl/plr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/p
 l/plr9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plti10.pfb>
-Output written on dokumentacja.pdf (8 pages, 340748 bytes).
+Output written on dokumentacja.pdf (9 pages, 341855 bytes).
 PDF statistics:
- 170 PDF objects out of 1000 (max. 8388607)
- 149 compressed objects within 2 object streams
+ 173 PDF objects out of 1000 (max. 8388607)
+ 151 compressed objects within 2 object streams
  46 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

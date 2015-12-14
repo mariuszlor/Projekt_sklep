@@ -12,7 +12,7 @@ Cele:
 \item Minimalizacja ilości osób zaangażowanych w zarządzanie sprzedażą
 \item Ujednolicenie istniejącej bazy produktów i ich kategorii
 \item Uniezależnienie się od wykorzystywanego portalu aukcyjnego
-\item Automatyzacja wystawiania faktur / rachunków
+\item Automatyzacja wystawiania faktur/rachunków
 \item Zapewnienie łatwej kontroli nad aktualnymi stanami magazynowymi produktów 
 \end{enumerate}
 
@@ -21,12 +21,12 @@ Zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym.
 Ze względu na powiększenie oferowanego asortymentu istniejący model funkcjonowania przedsiębiorstwa przestaje być wystarczająco wydajny 
 ze względu na źle przemyślany schemat przechowywania danych
 \begin{enumerate}
-\item opisy produktów jako pliki tekstowe przechowywane w strukturze katalogowej odpowiadającej kategoriom
-\item stany magazynowe w arkuszu kalkulacyjnym (bez multidostępu do zapisu)
-\item ceny w arkuszu kalkulacyjnym
-\item rozliczenia roczne też 
-\item dokumenty (np. faktury, raporty z przekazania do wysyłki) w formie papierowej - opisać dokładniej
-\item baza kupujących przechowywana jest przez system aukcyjny	
+\item Opisy produktów jako pliki tekstowe przechowywane w strukturze katalogowej odpowiadającej kategoriom
+\item Stany magazynowe w arkuszu kalkulacyjnym (bez multidostępu do zapisu)
+\item Ceny w arkuszu kalkulacyjnym
+\item Rozliczenia roczne w arkuszu kalkulacyjnym 
+\item Dokumenty tj. faktury, raporty z przekazania do wysyłki) w formie papierowej
+\item Baza kupujących przechowywana jest przez system aukcyjny	
 \end{enumerate}
 \textbf{W jaki sposób baza jest wykorzystywana?}\\
 Aby dodać produkt do sprzedaży, wyszukiwany jest odpowiedni plik tekstowy z jego opisem oraz sprawdzane cena i stan magazynowy w arkuszu kalkulacyjnym.
@@ -34,29 +34,81 @@ Kategoria ustalana jest ręcznie w arkuszu kalulacyjnym zawierającym stany maga
 Produkty są wystawianie ręcznie na popularnym serwisie aukcyjnym.
 Informacje o kupnie: jaki towar, w jakiej ilości, w jakiej cenie oraz o wpłacie dostarczane są przez serwis aukcyjny w formie tekstowej (elektronicznie)
 Do osoby odpowiedzalnej za gromadzenie towaru w paczkę do wysyłki i przekazanie paczki kurierowi przekazywana jest w formie wydruku
-Informacje potrzebne do generowania raportów przepisywane są do arkusza kalkulacyjnego ręcznie.
+Informacje potrzebne do generowania raportów przepisywane są do arkusza kalkulacyjnego ręcznie.\\
 Problemy: 
 \begin{enumerate}
-	\item żmudne wyszukiwanie danych
-	\item duże ryzyko ludzkiego błędu podczas ręcznego przenoszenia danych 
+	\item Żmudne wyszukiwanie danych
+	\item Duże ryzyko błędu ludzkiego podczas ręcznego przenoszenia danych 
 \end{enumerate}
 
 
-\subsection{Lista pól w projektowanej bazie}
+\subsection{Lista tabel w projektowanej bazie}
 \begin{enumerate}
-\item klient: klient\_id, typ(firma/os.prywatna) nazwisko, imię, NIP, nazwa\_firmy, domyślny\_adres\_wysyłki, login, hasło
-\item kategoria: kategoria\_id, nazwa, id\_nadrzednej
-\item produkt: produkt\_id, nazwa, opis, stan\_magazyn, cena, blokada
+\item kategoria:
+\begin{itemize}
+	\item \# kategoria\_id 
+	\item nazwa 
+	\item id\_nadrzednej
+\end{itemize}
+\item klient:
+\begin{itemize}
+	\item \# klient\_id,\ 
+	\item typ 
+	\item nazwisko 
+	\item imię 
+	\item NIP 
+	\item nazwa\_firmy 
+	\item domyślny\_adres\_wysyłki 
+	\item login 
+	\item hasło
+	\end{itemize}
+\item pracownik
+\begin{itemize}
+	\item \# pracownik\_id
+	\item login
+	\item haslo
+	\item uprawnienia	
+	\end{itemize} 
+\item produkt:
+\begin{itemize}
+	\item \# produkt\_id 
+	\item nazwa
+	\item FK kategoria\_id 
+	\item opis 
+	\item stan\_magazyn
+	\item cena
+	\item blokada
+	\item data\_edycji
+\end{itemize} 
+\item produkty\_zakupione
+\begin{itemize}
+	\item FK transakcja\_id
+	\item FK produkt\_hist\_id
+\end{itemize}
+\item produkt\_hist
+\begin{itemize}
+	\item \# produkt\_hist\_id
+	\item produkt\_id
+	\item nazwa
+	\item opis
+	\item stan\_magazyn
+	\item cena
+	\item blokada
+	\item data\_edycji
+\end{itemize}
+\item transakcja
+\begin{itemize}
+	\item \# transakcja\_id
+	\item FK klient\_id
+	\item adres\_wysylki
+	\item do\_zaplaty
+	\item kwota\_wplacona
+	\item status
+\end{itemize}
 
-\item rabaty\_klient: klient\_id, kategoria\_id, wysokosc\_rabatu 
-\item promocje\_produkt: produkt\_id, klient\_id, wysokosc\_rabatu , data\_od, data\_do 
-
-\item transakcje: transakcja\_id, klient\_id, adres\_wysyłki, kwota\_zamowienia, kwota\_wplacona, status
-\item produkty\_zakupione (bezpośrednio związane z transakcj): transakcja\_id, (wszystkie pola produkt), ilość
-koszyk
-
-\item najwazniejsze: konta
 \end{enumerate}
+
+
 \subsection{Związki między elementami:}
 \begin{itemize}
 \item Kategorie są wielopoziomowe (z podkategoriami)
