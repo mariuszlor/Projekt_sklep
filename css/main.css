@@ -104,18 +104,9 @@ body  {
 	color:#bcc;
 }
 
-.menu.glowne ul li  ul {
-	display: none;
-}
-
 .menu.glowne ul li.active  > a {
 	cursor: default;
 	font-weight: bold;
-}
-
-
-.menu.glowne ul li.active  > ul {
-	display: block;
 }
 
 .menu.glowne ul li  ul {

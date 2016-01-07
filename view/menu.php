@@ -3,22 +3,34 @@
 		<li><a href="index.html">Strona główna</a></li>
 		<li class="active"><a href="#">Kategorie produktów</a>
 			<ul>
-				<li><a href="#">Kategoria 1</a></li>
-				<li><a href="#">Kategoria 2</a></li>
-				<li><a href="#">Kategoria 3</a></li>
+				<?php echo gen_menu($kategorie); ?>
 			</ul>
 		</li>
 		<li class="active"><a href="#">Panel administracyjny</a>
 			<ul>
-				<?php if(isset($_SESSION['pracownik_id'])) { ?>
-				<li><a href="#">Dodaj kategorię</a></li>
-				<li><a href="#">Dodaj / edytuj kategorie</a></li>
-				<li><a href="#">Dodaj produkt</a></li>
-				<li><a href="#">Usuń / edytuj produkty</a></li>
-				<li><a href="#">Zarządzaj rabatami</a></li>
-				<li><a href="logout.html?logout">Wyloguj</a></li>
+				<?php if(pracownik_zalogowany()) { ?>
+					<?php if(upr::maUprawnienia(upr::pracownik)) { ?>
+						<li><a href="#">Zarządzaj pracownikami</a></li>
+					<?php } ?>
+					<?php if(upr::maUprawnienia(upr::kategoria)) { ?>
+						<li><a href="kategoria.html">Dodaj / edytuj kategorie</a></li>
+					<?php } ?>
+					<?php if(upr::maUprawnienia(upr::produkt)) { ?>
+						<li><a href="#">Dodaj produkt</a></li>
+						<li><a href="#">Usuń / edytuj produkty</a></li>
+					<?php } ?>
+					<?php if(upr::maUprawnienia(upr::wysylka)) { ?>
+						<li><a href="#">Kompletuj zamówienia do wysyłki</a></li>
+					<?php } ?>
+					<?php if(upr::maUprawnienia(upr::klient)) { ?>
+						<li><a href="#">Baza klientów</a></li>
+					<?php } ?>
+					<?php if(upr::maUprawnienia(upr::raport)) { ?>
+						<li><a href="#">Raporty</a></li>
+					<?php } ?>
+					<li><a href="logout.html?logout">Wyloguj</a></li>
 				<?php } else { ?>
-				<li><a href="login-pracownik.html">Logowanie</a></li>
+					<li><a href="login-pracownik.html">Logowanie</a></li>
 				<?php } ?>
 			</ul>
 		</li>

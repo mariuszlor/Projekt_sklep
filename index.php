@@ -1,10 +1,16 @@
 <?php 
 session_start();
-include('Database.class.php');
-$DB = Database::instance();
+include('class/database.php');
+include('class/upr.php');
+$DB = database::instance();
 include('ctrl/functions.php');
-?>
-<?php 
+sprawdz_uprawnienia();
+//*
+$DB->query("DELETE FROM kategoria");
+echo '<pre>';
+random_cats(3);
+exit;
+/*/
 if(isset($_GET['site']) AND $_GET['site']!='' AND $_GET['site']!='index') {
 	ob_start();
 	switch($_GET['site']) {
@@ -26,9 +32,10 @@ if(isset($_GET['site']) AND $_GET['site']!='' AND $_GET['site']!='index') {
 			$htitle = 'Pracownik - logowanie';
 			include('view/logowanie_pracownik.php'); 
 			break;
-		case 'logout':
-			break;
-		case 'logout-pracownik':
+		case 'kategoria':
+			include('ctrl/kategoria.php');
+			$htitle = 'Zarządzanie kategoriami';
+			include('view/kategoria.php'); 
 			break;
 		default:
 			header("Location: {$dir}glowna.html");
@@ -37,4 +44,8 @@ if(isset($_GET['site']) AND $_GET['site']!='' AND $_GET['site']!='index') {
 	$content = ob_get_contents();
 	ob_end_clean(); 
 }
-include('view/view.php'); ?>
+include('ctrl/drzewo-kategorii.php');
+echo '<pre>'; print_r($kategorie); exit;
+include('view/view.php'); 
+/**/
+?>

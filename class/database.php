@@ -1,5 +1,5 @@
 <?php
-class Database extends mysqli{
+class database extends mysqli{
 	static $THIS; //instancja singletona
 
 	private $host 	= 'localhost';
@@ -13,7 +13,7 @@ class Database extends mysqli{
 	
 	static function instance(){
 		if(empty(self::$THIS) OR !self::$THIS->ping()) {
-			self::$THIS = new Database();
+			self::$THIS = new database();
 			self::$THIS->query('SET NAMES \'utf8\'');
 		}
 		return self::$THIS;
