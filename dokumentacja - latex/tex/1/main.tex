@@ -1,0 +1,138 @@
+\chapter{Projektowanie Bazy Danych}
+Projekt: baza danych dla sklepu internetowego sprzedającego akcesoria kuchenne\\
+Obecnie zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
+\section{Sformułowanie celu i zadań}
+Cele:
+\begin{enumerate}
+\item Minimalizacja czasu
+\begin{itemize}
+\item pomiędzy złożeniem zamówienia przez klienta a przekazaniem towaru do wysyłki w przypadku wysyłki za pobraniem
+\item pomiędzy zaksięgowaniem wpłaty klienta a przekazaniem towaru do wysyłki w przypadku płatności z góry 
+\end{itemize} 
+\item Minimalizacja ilości osób zaangażowanych w zarządzanie sprzedażą
+\item Ujednolicenie istniejącej bazy produktów i ich kategorii
+\item Uniezależnienie się od wykorzystywanego portalu aukcyjnego
+\item Automatyzacja wystawiania faktur/rachunków
+\item Zapewnienie łatwej kontroli nad aktualnymi stanami magazynowymi produktów 
+\end{enumerate}
+
+\subsection{Analiza istniejacej bazy — analiza stanu wyjsciowego}
+Zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym. 
+Ze względu na powiększenie oferowanego asortymentu istniejący model funkcjonowania przedsiębiorstwa przestaje być wystarczająco wydajny 
+ze względu na źle przemyślany schemat przechowywania danych
+\begin{enumerate}
+\item Opisy produktów jako pliki tekstowe przechowywane w strukturze katalogowej odpowiadającej kategoriom
+\item Stany magazynowe w arkuszu kalkulacyjnym (bez multidostępu do zapisu)
+\item Ceny w arkuszu kalkulacyjnym
+\item Rozliczenia roczne w arkuszu kalkulacyjnym 
+\item Dokumenty tj. faktury, raporty z przekazania do wysyłki) w formie papierowej
+\item Baza kupujących przechowywana jest przez system aukcyjny	
+\end{enumerate}
+\textbf{W jaki sposób baza jest wykorzystywana?}\\
+Aby dodać produkt do sprzedaży, wyszukiwany jest odpowiedni plik tekstowy z jego opisem oraz sprawdzane cena i stan magazynowy w arkuszu kalkulacyjnym.
+Kategoria ustalana jest ręcznie w arkuszu kalulacyjnym zawierającym stany magazynowe
+Produkty są wystawianie ręcznie na popularnym serwisie aukcyjnym.
+Informacje o kupnie: jaki towar, w jakiej ilości, w jakiej cenie oraz o wpłacie dostarczane są przez serwis aukcyjny w formie tekstowej (elektronicznie)
+Do osoby odpowiedzalnej za gromadzenie towaru w paczkę do wysyłki i przekazanie paczki kurierowi przekazywana jest w formie wydruku
+Informacje potrzebne do generowania raportów przepisywane są do arkusza kalkulacyjnego ręcznie.\\
+Problemy: 
+\begin{enumerate}
+	\item Żmudne wyszukiwanie danych
+	\item Duże ryzyko błędu ludzkiego podczas ręcznego przenoszenia danych 
+\end{enumerate}
+
+
+\subsection{Lista tabel w projektowanej bazie}
+\begin{enumerate}
+\item kategoria:
+\begin{itemize}
+	\item \# kategoria\_id 
+	\item nazwa 
+	\item id\_nadrzednej
+\end{itemize}
+\item klient:
+\begin{itemize}
+	\item \# klient\_id,\ 
+	\item typ 
+	\item nazwisko 
+	\item imię 
+	\item NIP 
+	\item nazwa\_firmy 
+	\item domyślny\_adres\_wysyłki 
+	\item login 
+	\item hasło
+	\end{itemize}
+\item pracownik
+\begin{itemize}
+	\item \# pracownik\_id
+	\item login
+	\item haslo
+	\item uprawnienia	
+	\end{itemize} 
+\item produkt:
+\begin{itemize}
+	\item \# produkt\_id 
+	\item nazwa
+	\item FK kategoria\_id 
+	\item opis 
+	\item stan\_magazyn
+	\item cena
+	\item blokada
+	\item data\_edycji
+\end{itemize} 
+\item produkty\_zakupione
+\begin{itemize}
+	\item FK transakcja\_id
+	\item FK produkt\_hist\_id
+\end{itemize}
+\item produkt\_hist
+\begin{itemize}
+	\item \# produkt\_hist\_id
+	\item produkt\_id
+	\item nazwa
+	\item opis
+	\item stan\_magazyn
+	\item cena
+	\item blokada
+	\item data\_edycji
+\end{itemize}
+\item transakcja
+\begin{itemize}
+	\item \# transakcja\_id
+	\item FK klient\_id
+	\item adres\_wysylki
+	\item do\_zaplaty
+	\item kwota\_wplacona
+	\item status
+\end{itemize}
+
+\end{enumerate}
+
+
+\subsection{Związki między elementami:}
+\begin{itemize}
+\item Kategorie są wielopoziomowe (z podkategoriami)
+\item Produkt należy tylko do jednej (pod)kategorii
+\item Dane produktów mogą zmieniać się w każdej chwili
+\item Dla każdej transakcji należy przetrzymywać informacje o produkcie z momentu wyświetlenia podsumowania zamówienia klientowi
+\item Raport podsumowujący transakcję przed "zatwierdzam i płacę" = świętość, dane tam nie mogą ulec zmianie przez modyfikację parametrów produktu (w szczególności: cena)
+\item Użytkownik niezalogowany ma możliwość zrobienia zakupów w sklepie internetowym
+\end{itemize}
+
+\subsection{Diagram przypadków użycia}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=15 cm] {fig/use_case_diagram}
+	\caption{Diagram przypadków uycia}
+	\label{fig:use_case_diagram}
+\end{figure}
+\subsection{Diagram klas}
+\begin{figure}
+	\centering
+	\includegraphics[width=15 cm] {fig/klasy}
+	\caption{Diagram klas}
+	\label{fig:diagram klas}
+\end{figure}
+\subsection{Wyjściowa funkcjonalność}
+\section{Definiowanie tabel, wiezów integralnosci, perspektyw}

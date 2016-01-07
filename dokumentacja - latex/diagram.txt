@@ -1,0 +1,27 @@
+Diagram przypadków użycia
+
+Zarządzający sklepem:
+Dodaj nowy produkt
+Zmień opis produktu
+Zmień cenę produktu
+Usuń produkt
+Zmień kategorię produktu
+Zwiększ stan magazynowy towaru
+Przyznaj rabat klientowi
+Ustal promocję na produkt
+
+Klient:
+Załóż konto (wprowadź dane: imię, nazwisko, nazwa firmy)
+Weryfikacja konta (kliknij link / wprowadź kod wysłany na adres e-mail)
+Ustal domyślny adres wysyłki
+Dodaj produkt do koszyka
+Złóż zamówienie (koszyk)
+Potwierdź zamówienie
+Zapłać
+
+
+Obsługujący wysyłkę:
+Potwierdź zrealizowanie zamówienia (wysyłkę)
+
+Pracownik na podstawie maila od klienta / payu:
+Potwierdź zaksięgowanie wpłaty 
