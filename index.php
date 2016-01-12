@@ -5,12 +5,23 @@ include('class/upr.php');
 $DB = database::instance();
 include('ctrl/functions.php');
 sprawdz_uprawnienia();
-//*
-$DB->query("DELETE FROM kategoria");
+/*
 echo '<pre>';
-random_cats(3);
+$DB->real_query("call testp()") OR die($DB->error);
+do {
+    if ($res = $DB->store_result()) {
+        printf("---\n");
+        var_dump($res->fetch_all());
+        $res->free();
+    } else {
+        if ($DB->errno) {
+            echo "Store failed: (" . $DB->errno . ") " . $DB->error;
+        }
+    }
+} while ($DB->more_results() && $DB->next_result());
+echo "Koniec wynikow";
 exit;
-/*/
+*/
 if(isset($_GET['site']) AND $_GET['site']!='' AND $_GET['site']!='index') {
 	ob_start();
 	switch($_GET['site']) {
@@ -45,7 +56,6 @@ if(isset($_GET['site']) AND $_GET['site']!='' AND $_GET['site']!='index') {
 	ob_end_clean(); 
 }
 include('ctrl/drzewo-kategorii.php');
-echo '<pre>'; print_r($kategorie); exit;
 include('view/view.php'); 
 /**/
 ?>

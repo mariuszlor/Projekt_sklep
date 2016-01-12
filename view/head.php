@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700&amp;subset=latin,latin-ext">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/forms.css">
 	<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.5" />
 	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
 	<script type="text/javascript" src="fancybox/jquery.fancybox.js?v=2.1.5"></script>

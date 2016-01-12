@@ -44,7 +44,7 @@ function gen_menu($kategorie) {
 	foreach($kategorie as $kategoria) {
 		$maPodk = count($kategoria['podkategorie'])>0;
 		$result.='<li'.($maPodk? 'class="active"' : '' ).
-			"><a href=\"produkt.html?kat={$kategoria['kategoria_id']},{$kategoria['nazwa']}\">{$kategoria['nazwa']}</a>";
+			"><a href=\"glowna.html?kat={$kategoria['kategoria_id']},{$kategoria['nazwa']}\">{$kategoria['nazwa']}</a>";
 		if($maPodk) $result.='<ul>'.gen_menu($kategoria['podkategorie']).'</ul>';
 		$result.='</li>';
 	}

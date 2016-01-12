@@ -1,11 +1,11 @@
 <?php
 class upr {
 	const pracownik	= 'pracownik';
-	const kategoria	= 'kategoria';
+	const kategoria = 'kategoria';
 	const produkt	= 'produkt';
-	const wysylka	= 'wysylka';
-	const raport	= 'raport';
-	const klient	= 'klient';
+	const wysylka = 'wysylka';
+	const klient = 'klient';
+	const raport = 'raport';
 	
 	static function maUprawnienia($upr) {
 		return isset($_SESSION['uprawnienia']) && in_array($upr, $_SESSION['uprawnienia']);

@@ -1,6 +1,6 @@
 <div class="menu glowne">
 	<ul class="menu glowne">
-		<li><a href="index.html">Strona główna</a></li>
+		<li><a href="glowna.html">Strona główna</a></li>
 		<li class="active"><a href="#">Kategorie produktów</a>
 			<ul>
 				<?php echo gen_menu($kategorie); ?>
