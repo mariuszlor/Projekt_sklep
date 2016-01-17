@@ -2,7 +2,6 @@
 Projekt: baza danych dla sklepu internetowego sprzedającego akcesoria kuchenne\\
 Obecnie zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
 \section{Sformułowanie celu i zadań}
-Cele:
 \begin{enumerate}
 \item Minimalizacja czasu
 \begin{itemize}
@@ -13,7 +12,9 @@ Cele:
 \item Ujednolicenie istniejącej bazy produktów i ich kategorii
 \item Uniezależnienie się od wykorzystywanego portalu aukcyjnego
 \item Automatyzacja wystawiania faktur/rachunków
-\item Zapewnienie łatwej kontroli nad aktualnymi stanami magazynowymi produktów 
+\item Zapewnienie łatwej kontroli nad aktualnymi stanami magazynowymi produktów
+\item Zapewnienie kontroli dostępu do danych
+\item Ograniczenie modyfikacji danych dla poszczególnych pracowników 
 \end{enumerate}
 
 \subsection{Analiza istniejacej bazy — analiza stanu wyjsciowego}
@@ -46,64 +47,61 @@ Problemy:
 \begin{enumerate}
 \item kategoria:
 \begin{itemize}
-	\item \# kategoria\_id 
-	\item nazwa 
-	\item id\_nadrzednej
+	\item \# kategoria\_id - pole jednoznacznie identyfikujące kategorię
+	\item nazwa - nazwa kategorii może się powtarzać ( np. podkategoria "pozostałe" w różnych kategoriach)
+	\item FK id\_nadrzednej - id kategorii nadrzędnej, kategoriami poziomu najwyższego są te, gdzie id\_ nadrzędnej ma watrość NULL
 \end{itemize}
 \item klient:
 \begin{itemize}
-	\item \# klient\_id,\ 
-	\item typ 
-	\item nazwisko 
+	\item \# klient\_id, - pole jednoznacznie identyfikujące klienta
+	\item typ - 'p'- klient indywidualny 'f' -firma
+	\item nazwisko -
 	\item imię 
 	\item NIP 
 	\item nazwa\_firmy 
-	\item domyślny\_adres\_wysyłki 
+	\item domyślny\_adres\_wysyłki - wartość wstawiana domyślnie do pola 'adres\_wysylki'
 	\item login 
 	\item hasło
 	\end{itemize}
 \item pracownik
 \begin{itemize}
-	\item \# pracownik\_id
+	\item \# pracownik\_id - pole jednoznacznie identyfikujące pracownika
 	\item login
 	\item haslo
 	\item uprawnienia	
 	\end{itemize} 
 \item produkt:
 \begin{itemize}
-	\item \# produkt\_id 
-	\item nazwa
-	\item FK kategoria\_id 
-	\item opis 
-	\item stan\_magazyn
+	\item \# produkt\_id pole jednoznacznie identyfikujące produkt
+	\item nazwa - nazawa produktu wyświetlana klientowi na stronie internetowej, pakującemu produkt w raportach itd
+	\item FK kategoria\_id id kategorii, do której jest przydzielany produkt, jeśli ma wartość NULL, produkt nie będzie nigdzie wyświetlany
+	\item opis - opis produktu (HTML)
+	\item stan\_magazyn - aktualny stan magazynowy wartość wprowadzana ręcnie i zmniejszana w momencie zatwierdzenia transakcji do realizacji
 	\item cena
-	\item blokada
-	\item data\_edycji
-\end{itemize} 
-\item produkty\_zakupione
+	\item blokada - wyświetlanie i sprzedaż produktu może być wstrzymana
+	\end{itemize} 
+\item transakcja\_produkt\_v
 \begin{itemize}
 	\item FK transakcja\_id
-	\item FK produkt\_hist\_id
+	\item sztuk
+	\item FK produkt\_edycja\_id
 \end{itemize}
-\item produkt\_hist
+\item produkt\_edycja
 \begin{itemize}
-	\item \# produkt\_hist\_id
-	\item produkt\_id
-	\item nazwa
-	\item opis
-	\item stan\_magazyn
-	\item cena
-	\item blokada
-	\item data\_edycji
+	\item \# produkt\_edycja\_id - pole jednoznacznie identyfikujące zmianę (edycję atrybutu lub dodanie) produktu, a więc konkretną wersję konkretnego produktu
+	\item FK produkt\_id - id edytowanego produktu
+	\item kolumna - nazwa edytowanego atrybutu lub informacja "dodano produkt"
+	\item poprz\_wartosc - wartość atrybutu sprzed edycji lub  wartość NULL gdy dodano nowy produkt
+	\item czas\_edycji - czas wprowadzenia zmian
+	\item FK pracownik\_id - id pracownika edytującego lub dodającego produkt
 \end{itemize}
 \item transakcja
 \begin{itemize}
-	\item \# transakcja\_id
-	\item FK klient\_id
-	\item adres\_wysylki
-	\item do\_zaplaty
+	\item \# transakcja\_id pole jednoznacznie identyfikujące transakcję
+	\item FK klient\_id - id zalogowanego klienta który utworzył transakcję lub NULL dla kupującego bez logowania
+	\item adres\_wysylki - adres podany w formularzu dostawy transakcji
 	\item kwota\_wplacona
-	\item status
+	\item status - utworzono/potwierdzono(po wyświeltleniu podsumowania transakcji)/zapłacono/wysłano/dostarczono
 \end{itemize}
 
 \end{enumerate}
@@ -116,23 +114,56 @@ Problemy:
 \item Dane produktów mogą zmieniać się w każdej chwili
 \item Dla każdej transakcji należy przetrzymywać informacje o produkcie z momentu wyświetlenia podsumowania zamówienia klientowi
 \item Raport podsumowujący transakcję przed "zatwierdzam i płacę" = świętość, dane tam nie mogą ulec zmianie przez modyfikację parametrów produktu (w szczególności: cena)
+Bezwzględnie musi istnieć możliwość wyświeltlenia stanu produktu:
+\begin{itemize}
+	\item nazwa
+	\item opis
+	\item cena
+\end{itemize}
+z momentu  w którym klient dokonał zakupu
 \item Użytkownik niezalogowany ma możliwość zrobienia zakupów w sklepie internetowym
 \end{itemize}
 
 \subsection{Diagram przypadków użycia}
 
-\begin{figure}
+Diagram przypadków użycia (ang. use case) – graficzne przedstawienie przypadków użycia, aktorów oraz związków między nimi.
+
+Diagram przypadków użycia tworzony jest w początkowych fazach modelowania. Diagram ten stanowi tylko przegląd możliwych działań w systemie, szczegóły ich przebiegu są modelowane za pomocą innych technik. Diagram przypadków użycia przedstawia usługi, które system świadczy aktorom, lecz bez wskazywania konkretnych rozwiązań technicznych.
+
+\begin{figure} [H]
 	\centering
 	\includegraphics[width=15 cm] {fig/use_case_diagram}
 	\caption{Diagram przypadków uycia}
 	\label{fig:use_case_diagram}
 \end{figure}
 \subsection{Diagram klas}
-\begin{figure}
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=15 cm] {fig/klasy}
 	\caption{Diagram klas}
 	\label{fig:diagram klas}
 \end{figure}
 \subsection{Wyjściowa funkcjonalność}
+
+Sklep/seris internetowy z możliwością założenia konta użytkownika.
+	
+Rodzaje kont w serwisie:
+	
+Co najmniej jedno konto z uprawnieniami administratora z zastrzeżeniem że nie może usunąć własnego konta (zabezpieczenia aby w serwisie istniało konto administatora)
+
+Konta pracowników którym można nadać odpowiednie uprawnienia dodawanie/usuwanie kategorii/produktów generowanie raportów sprzedaży. Konto pracownika może posiadać wszystkie uprawnienia lub tylko wybrane. Konto pracownika może być utworzone/skasowane tylko przez innego pracownika z uprawnieniami do zarządzania kontami pracowników.
+
+Konta użytkowników. Standardowe konta użytkowników. Użytkownik ma prawo edytowania/zmiany swoich danych osobowych. Do rozróżniania użytowników wykorzystywane są ich unikalne loginy podawane przy rejestracji w serwisie.
+Zasady tworzenia loginów:
+\begin{enumerate}
+\item Login musi być unikalny w bazie
+\item Nie jest rozróżniana wielkość znaków w loginie np. ADMIN, admin, AdMin - traktowany jest jak jeden login
+\end{enumerate}
+Loginy są zapisywane w bazie, raz wykorzystany login nie może być użyty ponownie.
+
+Użytkownik ma możliwość usunięcia konta z serwisu. w takim przypadku muszą zostać usunięte wszystkie jego dane osobowe. Zachowane zostają dane o przeprowadzonych z tym klientem transakcjach bez możliwości jego identyfikacji.
+
+
+
+	
 \section{Definiowanie tabel, wiezów integralnosci, perspektyw}
