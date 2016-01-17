@@ -1,6 +1,6 @@
 <div class="menu glowne">
 	<ul class="menu glowne">
-		<li><a href="index.html">Strona główna</a></li>
+		<li><a href="glowna.html">Strona główna</a></li>
 		<li class="active"><a href="#">Kategorie produktów</a>
 			<ul>
 				<?php echo gen_menu($kategorie); ?>
@@ -16,8 +16,8 @@
 						<li><a href="kategoria.html">Dodaj / edytuj kategorie</a></li>
 					<?php } ?>
 					<?php if(upr::maUprawnienia(upr::produkt)) { ?>
-						<li><a href="#">Dodaj produkt</a></li>
-						<li><a href="#">Usuń / edytuj produkty</a></li>
+						<li><a href="produkt-edycja.html">Dodaj produkt</a></li>
+						<li><a href="produkt-edycja-lista.html">Edytuj produkty</a></li>
 					<?php } ?>
 					<?php if(upr::maUprawnienia(upr::wysylka)) { ?>
 						<li><a href="#">Kompletuj zamówienia do wysyłki</a></li>

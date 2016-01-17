@@ -4,7 +4,7 @@ class database extends mysqli{
 
 	private $host 	= 'localhost';
 	private $login 	= 'root';
-	private $pass 	= 'krasnal';
+	private $pass 	= '';
 	private $db 	= 'projekt_bazy_sklep';
 	
 	private function __construct(){

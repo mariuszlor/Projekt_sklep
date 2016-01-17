@@ -1,0 +1,101 @@
+.formularz{
+    margin: 0px auto 30px;
+    background:#fff;
+    border-radius:2px;
+    padding:20px;
+}
+.formularz > h1{
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0px 0px 10px 0px;
+    color: #5C5C5C;
+    font-size:x-large;
+}
+.formularz > ul{
+    list-style:none;
+    padding:0;
+    margin:0;   
+}
+.formularz > ul > li{
+    display: block;
+    padding: 9px;
+    border:1px solid #DDDDDD;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+.formularz > ul > li:last-child{
+    border:none;
+    margin-bottom: 0px;
+    text-align: center;
+}
+.formularz > ul > li > label{
+    display: block;
+    float: left;
+    margin-top: -19px;
+    background: #FFFFFF;
+    height: 14px;
+    padding: 2px 5px 2px 5px;
+    color: #B9B9B9;
+    font-size: 14px;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.formularz > ul > li > input[type="text"],
+.formularz > ul > li >  input[type="date"],
+.formularz > ul > li >  input[type="datetime"],
+.formularz > ul > li >  input[type="email"],
+.formularz > ul > li >  input[type="number"],
+.formularz > ul > li >  input[type="search"],
+.formularz > ul > li >  input[type="time"],
+.formularz > ul > li >  input[type="url"],
+.formularz > ul > li >  input[type="password"],
+.formularz > ul > li > input[type="checkbox"],
+.formularz > ul > li >  textarea,
+.formularz > ul > li >  select 
+{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    display: block;
+    outline: none;
+    border: none;
+    height: 25px;
+    line-height: 25px;
+    font-size: 16px;
+    padding: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+.formularz > ul > li > span{
+    background: #F3F3F3;
+    display: block;
+    padding: 3px;
+    margin: 0 -9px -9px -9px;
+    text-align: center;
+    color: #C0C0C0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+}
+.formularz > ul > li > input[type="submit"],
+.formularz > ul > li > input[type="button"]{
+    background: #2471FF;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-bottom: 3px solid #5994FF;
+    border-radius: 3px;
+    color: #D2E2FF;
+}
+.formularz > ul > li > input[type="submit"]:hover,
+.formularz > ul > li > input[type="button"]:hover{
+    background: #6B9FFF;
+    color:#fff;
+}
+.formularz.blisko { 
+	margin: 0px auto;
+	padding: 0px 20px;
+}
+.formularz.blisko > ul > li {
+	padding: 2px 9px;
+}
+	

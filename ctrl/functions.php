@@ -44,28 +44,16 @@ function gen_menu($kategorie) {
 	foreach($kategorie as $kategoria) {
 		$maPodk = count($kategoria['podkategorie'])>0;
 		$result.='<li'.($maPodk? 'class="active"' : '' ).
-			"><a href=\"produkt.html?kat={$kategoria['kategoria_id']},{$kategoria['nazwa']}\">{$kategoria['nazwa']}</a>";
+			"><a href=\"glowna.html?kat={$kategoria['kategoria_id']},{$kategoria['nazwa']}\">{$kategoria['nazwa']}</a>";
 		if($maPodk) $result.='<ul>'.gen_menu($kategoria['podkategorie']).'</ul>';
 		$result.='</li>';
 	}
-	/*
-	<li class="active"><a href="#">Kategorie produktów</a>
-	<ul>
-	<li><a href="#">Kategoria 1</a></li>
-	*/
 	return $result;
 }
 
-function random_cats($maxlevel, $level=null, $idkat=null) {
-	global $DB;
-	if(!$level) {
-		$level = $maxlevel;
-		$idkat = 'null';
-	}
-	for($i=0; $i<4; ++$i) {
-		//echo "INSERT INTO kategoria SET nazwa='".(chr(64+$level).chr(49+$i))."', id_nadrzednej=$idkat\n";
-		$DB->query("INSERT INTO kategoria SET nazwa='".(chr(65+$maxlevel-$level).chr(49+$i))."', id_nadrzednej=$idkat") or DBdie($DB->error);
-		if($level>1) random_cats($maxlevel, $level-1, $DB->insert_id);
-	}
+function build_sorter($key) {
+	return function ($a, $b) use ($key) {
+		return strnatcmp($a[$key], $b[$key]);
+	};
 }
 ?>
