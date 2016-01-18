@@ -38,9 +38,9 @@
 			<ul>
 				<?php if(isset($_SESSION['klient_id'])) { ?>
 				<li><a href="logout.html?logout">Wyloguj</a></li>
-				<li><a href="#">Ustawienia konta</a></li>
+				<li><a href="profil.html">Ustawienia konta</a></li>
 				<?php } else { ?>
-				<li><a href="#">Rejestracja</a></li>
+				<li><a href="rejestracja.html">Rejestracja</a></li>
 				<li><a href="login.html">Logowanie</a></li>
 				<?php } ?>
 			</ul>

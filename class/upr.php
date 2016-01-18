@@ -17,5 +17,10 @@ class upr {
 		header("Location: {$dir}glowna.html");
 		exit;
 	}
+	static function wyrzucStad() {
+		putMessage('Nie masz uprawnień do przeglądania tej zawartości');
+		header("Location: {$dir}glowna.html");
+		exit;
+	}
 }
 ?>

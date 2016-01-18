@@ -18,10 +18,10 @@ foreach($kategorie_produkt AS $kategoria_produkt) $kategorie_produkt_sorted[]=$k
 usort($kategorie_produkt_sorted, build_sorter('nazwa'));
 
 if(isset($_POST['produkt_id']))	$produkt_id	= $_POST['produkt_id'];
-if(isset($_POST['nazwa'])) 		$nazwa		= $_POST['nazwa'];
-if(isset($_POST['opis'])) 		$opis 		= $_POST['opis'];
+if(isset($_POST['nazwa'])) 		$nazwa		= $DB->real_escape_string($_POST['nazwa']);
+if(isset($_POST['opis'])) 		$opis 		= $DB->real_escape_string($_POST['opis']);
 if(isset($_POST['id_kat'])) 	$id_kat 	= $_POST['id_kat'];
-if(isset($_POST['cena'])) 		$cena 		= $_POST['cena'];
+if(isset($_POST['cena'])) 		$cena 		= $DB->real_escape_string($_POST['cena']);
 if(isset($_POST['nieblokuj'])) 	
 	$nieblokuj 	= true&&$_POST['nieblokuj'];
 else $nieblokuj = false;
@@ -67,12 +67,12 @@ else if(isset($_GET['produkt_id'])) {
 	if(is_numeric($_GET['produkt_id'])) {
 		$result = $DB->query("SELECT * FROM produkt WHERE produkt_id=".$_GET['produkt_id']) or DBdie($DB->error);
 		if($result AND $row = $result->fetch_assoc()) {
-			$produkt_id=$_GET['produkt_id'];
-			$nazwa = $row['nazwa'];
-			$opis = $row['opis'];
-			$id_kat = $row['kategoria_id'];
-			$cena = $row['cena'];
-			$nieblokuj = !$row['blokada'];
+			$produkt_id	= $row['produkt_id'];
+			$nazwa 		= $row['nazwa'];
+			$opis 		= $row['opis'];
+			$id_kat 	= $row['kategoria_id'];
+			$cena 		= $row['cena'];
+			$nieblokuj 	= !$row['blokada'];
 			$stan_magazyn = $row['stan_magazyn'];
 		}
 	}

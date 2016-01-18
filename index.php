@@ -1,10 +1,12 @@
 <?php 
 session_start();
 include('class/database.php');
-include('class/upr.php');
 $DB = database::instance();
+include('class/upr.php');
 include('ctrl/functions.php');
+include('class/klient.php');
 sprawdz_uprawnienia();
+
 if(!isset($_GET['site'])) $_GET['site']='';
 ob_start();
 switch($_GET['site']) {
@@ -44,6 +46,16 @@ switch($_GET['site']) {
 		include('ctrl/produkt-edycja-lista.php');
 		$htitle = "Zarządzanie produktami";
 		include('view/produkt-edycja-lista.php');
+		break;
+	case 'rejestracja':
+		include('ctrl/rejestracja.php');
+		$htitle = "Rejestracja klienta";
+		include('view/rejestracja.php');
+		break;
+	case 'profil':
+		include('ctrl/profil.php');
+		$htitle = "Edycja profilu";
+		include('view/profil.php');
 		break;
 	default:
 		header("Location: {$dir}glowna.html");
