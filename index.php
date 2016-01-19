@@ -8,6 +8,7 @@ include('class/klient.php');
 sprawdz_uprawnienia();
 
 if(!isset($_GET['site'])) $_GET['site']='';
+include('ctrl/drzewo-kategorii.php');
 ob_start();
 switch($_GET['site']) {
 	case 'logout': 
@@ -19,8 +20,13 @@ switch($_GET['site']) {
 		header("Location: {$dir}glowna.html");
 		break;
 	case 'glowna':
-		$htitle = 'Home - ';
+		//$htitle = '';
 		include('view/glowna.php'); 
+		break;
+	case 'produkt':
+		include('ctrl/produkt.php');
+		$htitle = 'Lista produktów';
+		include('view/produkt.php');
 		break;
 	case 'login':
 		if(isset($_POST['login']) AND isset($_POST['password'])) include('ctrl/login.php');
@@ -63,7 +69,6 @@ switch($_GET['site']) {
 }
 $content = ob_get_contents();
 ob_end_clean(); 
-include('ctrl/drzewo-kategorii.php');
 include('view/view.php'); 
 /**/
 ?>
