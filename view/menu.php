@@ -23,7 +23,7 @@
 						<li><a href="#">Kompletuj zamówienia do wysyłki</a></li>
 					<?php } ?>
 					<?php if(upr::maUprawnienia(upr::klient)) { ?>
-						<li><a href="#">Baza klientów</a></li>
+						<li><a href="baza_klientow.html">Baza klientów</a></li>
 					<?php } ?>
 					<?php if(upr::maUprawnienia(upr::raport)) { ?>
 						<li><a href="#">Raporty</a></li>
@@ -38,6 +38,7 @@
 			<ul>
 				<?php if(isset($_SESSION['klient_id'])) { ?>
 				<li><a href="logout.html?logout">Wyloguj</a></li>
+				<li><a href="koszyk.html">Twój koszyk</a>
 				<li><a href="profil.html">Ustawienia konta</a></li>
 				<?php } else { ?>
 				<li><a href="rejestracja.html">Rejestracja</a></li>

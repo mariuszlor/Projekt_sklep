@@ -5,6 +5,7 @@ $DB = database::instance();
 include('class/upr.php');
 include('ctrl/functions.php');
 include('class/klient.php');
+include('class/koszyk.php');
 sprawdz_uprawnienia();
 
 if(!isset($_GET['site'])) $_GET['site']='';
@@ -27,6 +28,11 @@ switch($_GET['site']) {
 		include('ctrl/produkt.php');
 		$htitle = 'Lista produktów';
 		include('view/produkt.php');
+		break;
+	case 'koszyk':
+		include('ctrl/koszyk.php');
+		$htitle = 'Twój koszyk';
+		include('view/koszyk.php');
 		break;
 	case 'login':
 		if(isset($_POST['login']) AND isset($_POST['password'])) include('ctrl/login.php');
@@ -62,6 +68,11 @@ switch($_GET['site']) {
 		include('ctrl/profil.php');
 		$htitle = "Edycja profilu";
 		include('view/profil.php');
+		break;
+	case 'baza_klientow':
+		include('ctrl/baza_klientow.php');
+		$htitle = "Baza klientow";
+		include('view/baza_klientow.php');
 		break;
 	default:
 		header("Location: {$dir}glowna.html");

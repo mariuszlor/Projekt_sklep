@@ -14,9 +14,25 @@ if(isset($produkty)) {
 	}
 }
 if(isset($produkt_wysw)) {
+	$htitle = $produkt_wysw['nazwa'];
 	echo '<h2>'.$produkt_wysw['nazwa'].'</h2>';
 	echo '<h3>Cena: '.$produkt_wysw['cena'].'</h2>';
 	echo $produkt_wysw['opis'];
+	echo '
+<form class="formularz" action="koszyk.html" method="post" >
+<input type="hidden" name="produkt_id" value="'.$produkt_wysw['produkt_id'].'" />
+<h1>Dodaj produkt do koszyka</h1>
+<ul>
+<li>
+	<label for="sztuk">Ilość sztuk</label>
+	<input type="number" value="1" name="sztuk" />
+</li>
+<li>
+	<input type="submit" value="Dodaj" />		
+</li>
+</ul>
+</form>	
+';
 }
 
 ?>
