@@ -62,6 +62,10 @@ if(isset($nazwa) AND isset($opis) AND isset($id_kat) AND isset($cena)) {
 			}
 		}
 	}
+	// real_escape_string mieszał, poprawka
+	if(isset($_POST['nazwa'])) 		$nazwa		= $_POST['nazwa'];
+	if(isset($_POST['opis'])) 		$opis 		= $_POST['opis'];
+	if(isset($_POST['cena'])) 		$cena 		= $_POST['cena'];
 }
 else if(isset($_GET['produkt_id'])) {
 	if(is_numeric($_GET['produkt_id'])) {

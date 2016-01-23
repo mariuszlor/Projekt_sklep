@@ -6,6 +6,7 @@ include('class/upr.php');
 include('ctrl/functions.php');
 include('class/klient.php');
 include('class/koszyk.php');
+include('class/transakcja.php');
 sprawdz_uprawnienia();
 
 if(!isset($_GET['site'])) $_GET['site']='';
@@ -73,6 +74,11 @@ switch($_GET['site']) {
 		include('ctrl/baza_klientow.php');
 		$htitle = "Baza klientow";
 		include('view/baza_klientow.php');
+		break;
+	case 'transakcja':
+		include('ctrl/transakcja.php');
+		$htitle = "Transakcja";
+		include('view/transakcja.php');
 		break;
 	default:
 		header("Location: {$dir}glowna.html");
