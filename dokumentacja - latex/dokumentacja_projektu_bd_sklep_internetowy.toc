@@ -6,9 +6,11 @@
 \contentsline {subsection}{\numberline {1.1.4}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{7}{subsection.1.1.4}
 \contentsline {subsection}{\numberline {1.1.5}Diagram klas}{9}{subsection.1.1.5}
 \contentsline {subsection}{\numberline {1.1.6}Wyj\IeC {\'s}ciowa funkcjonalno\IeC {\'s}\IeC {\'c}}{9}{subsection.1.1.6}
+\contentsline {subsection}{\numberline {1.1.7}Opis projektu w ca\IeC {\l }kowitym uj\IeC {\k e}ciu}{10}{subsection.1.1.7}
 \contentsline {section}{\numberline {1.2}Definiowanie tabel, wiez\IeC {\'o}w integralnosci, perspektyw}{10}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Procedury}{10}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Funkcje}{11}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Interfejs - strona internetowa}{12}{chapter.2}
-\contentsline {chapter}{Bibliografia}{13}{chapter*.2}
-\contentsline {chapter}{Spis rysunk\'ow}{14}{chapter*.3}
+\contentsline {subsection}{\numberline {1.2.2}Funkcje}{12}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {2}Interfejs - strona internetowa}{13}{chapter.2}
+\contentsline {chapter}{\numberline {3}Kody \IeC {\'z}r\IeC {\'o}d\IeC {\l }owe}{18}{chapter.3}
+\contentsline {chapter}{Bibliografia}{19}{chapter*.2}
+\contentsline {chapter}{Spis rysunk\'ow}{20}{chapter*.3}

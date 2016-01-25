@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 13:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 17:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,7 +871,7 @@ Overfull \hbox (14.83011pt too wide) in paragraph at lines 189--199
 [][] 
  []
 
-<fig/use_case_diagram.png, id=124, 789.70032pt x 527.72156pt>
+<fig/use_case_diagram.png, id=139, 789.70032pt x 527.72156pt>
 File: fig/use_case_diagram.png Graphic file (type png)
 
 <use fig/use_case_diagram.png>
@@ -882,7 +882,7 @@ Overfull \hbox (10.7269pt too wide) in paragraph at lines 232--233
  [][] 
  []
 
-[7] <fig/klasy.png, id=131, 783.67781pt x 464.4853pt>
+[7] <fig/klasy.png, id=147, 783.67781pt x 464.4853pt>
 File: fig/klasy.png Graphic file (type png)
  <use fig/klasy.png>
 Package pdftex.def Info: fig/klasy.png used on input line 239.
@@ -904,143 +904,205 @@ l.243 \subsection
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.266 \section
-              {Definiowanie tabel, wiezów integralnosci, perspektyw} <./fig/kl
-asy.png>]
-Overfull \hbox (358.64003pt too wide) in paragraph at lines 275--275
+l.263 \subsection
+                 {Opis projektu w całkowitym ujęciu} <./fig/klasy.png>]
+Overfull \hbox (358.64003pt too wide) in paragraph at lines 297--297
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
 ) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
  []
 
 
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 276--276
+Overfull \hbox (25.21614pt too wide) in paragraph at lines 298--298
  []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
 t(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (364.38872pt too wide) in paragraph at lines 277--277
+Overfull \hbox (364.38872pt too wide) in paragraph at lines 299--299
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
 0) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
  []
 
 
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 278--278
+Overfull \hbox (25.21614pt too wide) in paragraph at lines 300--300
  []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
 t(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (255.16365pt too wide) in paragraph at lines 280--280
+Overfull \hbox (255.16365pt too wide) in paragraph at lines 302--302
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne SELECT kategoria\_id, nazwa, id\_n
 adrzednej, 0 FROM kategoria WHERE kategoria\_id=id\_kat;[] 
  []
 
 
-Overfull \hbox (577.09016pt too wide) in paragraph at lines 283--283
+Overfull \hbox (577.09016pt too wide) in paragraph at lines 305--305
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, nazwa, id\_
 nadrzednej, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM
  podrzedne WHERE przetworzona=0);[] 
  []
 
-
-Overfull \hbox (59.70827pt too wide) in paragraph at lines 304--304
+[10]
+Overfull \hbox (59.70827pt too wide) in paragraph at lines 326--326
  []\OT4/cmtt/m/n/10.95 SELECT id\_nadrzednej FROM kategoria WHERE kategoria\_id
 =kat\_id INTO kat\_id;[] 
  []
 
-[10]
-Overfull \hbox (266.66103pt too wide) in paragraph at lines 315--315
+
+Overfull \hbox (266.66103pt too wide) in paragraph at lines 337--337
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
 ) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (272.40971pt too wide) in paragraph at lines 316--316
+Overfull \hbox (272.40971pt too wide) in paragraph at lines 338--338
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
 0) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (444.87035pt too wide) in paragraph at lines 321--321
+Overfull \hbox (444.87035pt too wide) in paragraph at lines 343--343
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kate
 goria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetw
 orzona=0);[] 
  []
 
 
-Overfull \hbox (778.29424pt too wide) in paragraph at lines 328--328
+Overfull \hbox (778.29424pt too wide) in paragraph at lines 350--350
  []\OT4/cmtt/m/n/10.95 SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa 
 AS nazwa\_kat  FROM produkt p JOIN kategoria k USING(kategoria\_id) WHERE p.blo
 kada=0 AND k.kategoria\_id IN (SELECT kategoria\_id FROM podrzedne);[] 
  []
 
-
-Overfull \hbox (214.92284pt too wide) in paragraph at lines 342--342
+[11]
+Overfull \hbox (214.92284pt too wide) in paragraph at lines 364--364
  []\OT4/cmtt/m/n/10.95 SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycj
 a WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;[] 
  []
 
 
-Overfull \hbox (749.5508pt too wide) in paragraph at lines 343--343
+Overfull \hbox (749.5508pt too wide) in paragraph at lines 365--365
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_ed
 ycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_i
 d AND kolumna='nazwa' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 344--344
+Overfull \hbox (738.05342pt too wide) in paragraph at lines 366--366
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edy
 cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
  AND kolumna='cena' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 345--345
+Overfull \hbox (738.05342pt too wide) in paragraph at lines 367--367
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edy
 cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
  AND kolumna='opis' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (772.54555pt too wide) in paragraph at lines 346--346
+Overfull \hbox (772.54555pt too wide) in paragraph at lines 368--368
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_
 edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\
 _id AND kolumna='blokada' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (795.5403pt too wide) in paragraph at lines 348--348
+Overfull \hbox (795.5403pt too wide) in paragraph at lines 370--370
  []\OT4/cmtt/m/n/10.95 SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(p
 oprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_b
 lokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id;[] 
  []
 
 
-Overfull \hbox (157.43596pt too wide) in paragraph at lines 358--358
+Overfull \hbox (157.43596pt too wide) in paragraph at lines 380--380
  []\OT4/cmtt/m/n/10.95 RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\
 _edycja` WHERE `produkt\_id`=produktid) 
  []
 
-[11]
+[12]
  2.
-) (./bibrystab.tex [12
+<fig/interfejs.png, id=185, 840.89156pt x 696.35156pt>
+File: fig/interfejs.png Graphic file (type png)
+ <use fig/interfejs.png>
+Package pdftex.def Info: fig/interfejs.png used on input line 387.
+(pdftex.def)             Requested size: 426.79134pt x 353.43452pt.
 
-] [13
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 387--388
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 391--392
+
+ []
+
+[13
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
+has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.394 session\_start();
+                        <./fig/interfejs.png>]
+Overfull \hbox (84.0714pt too wide) in paragraph at lines 431--431
+[]\OT4/cmtt/m/n/10.95 if(isset(\$\_POST['login']) AND isset(\$\_POST['password'
+])) include('ctrl/login.php');[] 
+ []
+
+
+Overfull \hbox (141.55827pt too wide) in paragraph at lines 436--436
+[]\OT4/cmtt/m/n/10.95 if(isset(\$\_POST['login']) AND isset(\$\_POST['password'
+])) include('ctrl/login-pracownik.php');[] 
+ []
+
+[14] <fig/menu_nie_zalogowany.png, id=196, 205.5178pt x 475.7775pt>
+File: fig/menu_nie_zalogowany.png Graphic file (type png)
+
+<use fig/menu_nie_zalogowany.png>
+Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 488.
+(pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
+ [15]
+<fig/menu_rozwijanie.png, id=201, 205.5178pt x 448.67625pt>
+File: fig/menu_rozwijanie.png Graphic file (type png)
+
+<use fig/menu_rozwijanie.png>
+Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 495.
+(pdftex.def)             Requested size: 205.5173pt x 448.67516pt.
+) (./kody_zrodlowe.tex [16pdfTeX warning (ext4): destination with the same iden
+tifier (name{figure.2.2}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Kody źródłowe} <./fig/menu_nie_zalogowany.png>] [17pdfTeX warni
+ng (ext4): destination with the same identifier (name{figure.2.3}) has been alr
+eady used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 \chapter
+            {Kody źródłowe} <./fig/menu_rozwijanie.png>]
+ 3.
+) (./bibrystab.tex [18
+
+] [19
 
 ] (./dokumentacja_projektu_bd_sklep_internetowy.lof)
 \tf@lof=\write5
 \openout5 = `dokumentacja_projektu_bd_sklep_internetowy.lof'.
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 39.
- [14
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
+ [20
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 39.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
  (./dokumentacja_projektu_bd_sklep_internetowy.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 39.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 39.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
 
 
 Package rerunfilecheck Warning: File `dokumentacja_projektu_bd_sklep_internetow
@@ -1050,32 +1112,35 @@ y.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `dokumentacja_projektu_bd_sklep_inte
 rnetowy.out':
-(rerunfilecheck)             Before: 72D60EA014CC538E089EC2D17AFF8E50;958
-(rerunfilecheck)             After:  1ED97995CBF9D6DC8AA47595A8AB0EF4;1024.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 39.
+(rerunfilecheck)             Before: 42BC6775FBB80CF0B9B8948FA12F8A83;1170
+(rerunfilecheck)             After:  F3E489C94AFE65FD629EB7887D5C8C41;1169.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 40.
  ) 
 Here is how much of TeX's memory you used:
- 8865 strings out of 493054
- 124626 string characters out of 6138326
- 248603 words of memory out of 5000000
- 12156 multiletter control sequences out of 15000+600000
+ 8909 strings out of 493054
+ 125319 string characters out of 6138326
+ 248770 words of memory out of 5000000
+ 12174 multiletter control sequences out of 15000+600000
  16574 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,52p,438b,473s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}{c:/texlive/2015/texm
-f-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/
-pl/pltt.enc}<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/201
-5/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2015/texmf-dist/fonts
-/type1/public/pl/plbx9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/pl
-r10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/
-2015/texmf-dist/fonts/type1/public/pl/plti10.pfb><c:/texlive/2015/texmf-dist/fo
-nts/type1/public/pl/pltt10.pfb>
-Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (14 pages, 370
-938 bytes).
+ 34i,11n,52p,438b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{chapter*.4} has been referenced but does not exis
+t, replaced by a fixed one
+
+{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}{c:/texlive/2015/texmf-
+dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl
+/pltt.enc}<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/2015/
+texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2015/texmf-dist/fonts/t
+ype1/public/pl/plbx9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr1
+0.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/20
+15/texmf-dist/fonts/type1/public/pl/plti10.pfb><c:/texlive/2015/texmf-dist/font
+s/type1/public/pl/pltt10.pfb>
+Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (20 pages, 456
+905 bytes).
 PDF statistics:
- 222 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 63 named destinations out of 1000 (max. 500000)
- 115 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 284 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 83 named destinations out of 1000 (max. 500000)
+ 154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
