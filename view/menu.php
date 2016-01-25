@@ -9,9 +9,6 @@
 		<li class="active"><a href="#">Panel administracyjny</a>
 			<ul>
 				<?php if(pracownik_zalogowany()) { ?>
-					<?php if(upr::maUprawnienia(upr::pracownik)) { ?>
-						<li><a href="#">Zarządzaj pracownikami</a></li>
-					<?php } ?>
 					<?php if(upr::maUprawnienia(upr::kategoria)) { ?>
 						<li><a href="kategoria.html">Dodaj / edytuj kategorie</a></li>
 					<?php } ?>
@@ -41,13 +38,6 @@
 				<li><a href="login.html">Logowanie</a></li>
 				<?php } ?>
 				<li><a href="koszyk.html">Twój koszyk</a>
-			</ul>
-		</li>
-		<li class="active"><a href="#">Raporty</a>
-			<ul>
-				<li><a href="#">Stany magazynowe</a></li>
-				<li><a href="#">Sprzedaż za okres...</a></li>
-				<li><a href="#">Moje zakupy</a></li>
 			</ul>
 		</li>
 	</ul>

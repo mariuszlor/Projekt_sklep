@@ -3,8 +3,8 @@ class database extends mysqli{
 	static $THIS; //instancja singletona
 
 	private $host 	= 'localhost';
-	private $login 	= 'root';
-	private $pass 	= '';
+	private $login 	= 'interfejs';
+	private $pass 	= '3ctA3CEqTpWjNCxQ';
 	private $db 	= 'projekt_bazy_sklep';
 	
 	private function __construct(){
@@ -18,5 +18,5 @@ class database extends mysqli{
 		}
 		return self::$THIS;
 	}
-
+}
 ?>
