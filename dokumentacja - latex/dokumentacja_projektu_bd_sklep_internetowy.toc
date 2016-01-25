@@ -1,6 +1,6 @@
-\contentsline {chapter}{\numberline {1}Projektowanie Bazy Danych}{3}{chapter.1}
+\contentsline {chapter}{\numberline {1}Projektowanie Bazy Danych \textit {Sklepu Internetowego z Akcesoriami Kuchennymi}}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Sformu\IeC {\l }owanie celu i zada\IeC {\'n}}{3}{section.1.1}
-\contentsline {subsection}{\numberline {1.1.1}Analiza istniejacej bazy \IeC {\textemdash } analiza stanu wyjsciowego}{3}{subsection.1.1.1}
+\contentsline {subsection}{\numberline {1.1.1}Analiza istniejacej bazy \IeC {\textemdash } analiza stanu wyjsciowego}{4}{subsection.1.1.1}
 \contentsline {subsection}{\numberline {1.1.2}Lista tabel w projektowanej bazie}{4}{subsection.1.1.2}
 \contentsline {subsection}{\numberline {1.1.3}Zwi\IeC {\k a}zki mi\IeC {\k e}dzy elementami:}{7}{subsection.1.1.3}
 \contentsline {subsection}{\numberline {1.1.4}Diagram przypadk\IeC {\'o}w u\IeC {\.z}ycia}{7}{subsection.1.1.4}
@@ -8,8 +8,8 @@
 \contentsline {subsection}{\numberline {1.1.6}Wyj\IeC {\'s}ciowa funkcjonalno\IeC {\'s}\IeC {\'c}}{9}{subsection.1.1.6}
 \contentsline {subsection}{\numberline {1.1.7}Opis projektu w ca\IeC {\l }kowitym uj\IeC {\k e}ciu}{10}{subsection.1.1.7}
 \contentsline {section}{\numberline {1.2}Definiowanie tabel, wiez\IeC {\'o}w integralnosci, perspektyw}{10}{section.1.2}
-\contentsline {subsection}{\numberline {1.2.1}Procedury}{10}{subsection.1.2.1}
-\contentsline {subsection}{\numberline {1.2.2}Funkcje}{12}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Interfejs - strona internetowa}{13}{chapter.2}
-\contentsline {chapter}{Bibliografia}{18}{chapter*.2}
-\contentsline {chapter}{Spis rysunk\'ow}{19}{chapter*.3}
+\contentsline {subsection}{\numberline {1.2.1}Procedury wykorzystane w projekcie}{10}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Funkcje wykorzystane w projekcie}{12}{subsection.1.2.2}
+\contentsline {chapter}{\numberline {2}Interfejs graficzny - strona internetowa}{13}{chapter.2}
+\contentsline {chapter}{Bibliografia}{16}{chapter*.2}
+\contentsline {chapter}{Spis rysunk\'ow}{17}{chapter*.3}

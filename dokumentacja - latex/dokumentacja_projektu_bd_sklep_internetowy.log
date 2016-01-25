@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 18:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -812,83 +812,83 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
  1.
-
-Underfull \hbox (badness 10000) in paragraph at lines 2--4
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 8.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
 (c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
- [3
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
+
+ []
+
+[3
 
 ]
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10.95> on input line 51.
+(Font)              <10.95> on input line 56.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <8> on input line 51.
+(Font)              <8> on input line 56.
 
-Overfull \hbox (66.44011pt too wide) in paragraph at lines 51--60
+Overfull \hbox (66.44011pt too wide) in paragraph at lines 56--65
 [][] 
  []
 
 
-Overfull \hbox (7.22589pt too wide) in paragraph at lines 68--83
+Overfull \hbox (7.22589pt too wide) in paragraph at lines 73--88
 [][] 
  []
 
 [4]
-Overfull \hbox (6.448pt too wide) in paragraph at lines 90--91
+Overfull \hbox (6.448pt too wide) in paragraph at lines 95--96
 []\OT4/cmr/m/n/10.95 domy�lny[]adres[]wysy�ki - war-to�� wsta-wia-na do-my�l-ni
 e do po-la 'ad-res[]wysylki' 
  []
 
 
-Overfull \hbox (49.25465pt too wide) in paragraph at lines 96--106
+Overfull \hbox (49.25465pt too wide) in paragraph at lines 101--111
 [][] 
  []
 
 
-Overfull \hbox (58.0451pt too wide) in paragraph at lines 114--128
+Overfull \hbox (58.0451pt too wide) in paragraph at lines 119--133
 [][] 
  []
 
 [5]
-Overfull \hbox (79.56995pt too wide) in paragraph at lines 140--154
+Overfull \hbox (79.56995pt too wide) in paragraph at lines 145--159
 [][] 
  []
 
 
-Overfull \hbox (68.6301pt too wide) in paragraph at lines 165--179
+Overfull \hbox (68.6301pt too wide) in paragraph at lines 170--184
 [][] 
  []
 
 [6]
-Overfull \hbox (14.83011pt too wide) in paragraph at lines 189--199
+Overfull \hbox (14.83011pt too wide) in paragraph at lines 194--204
 [][] 
  []
 
-<fig/use_case_diagram.png, id=134, 789.70032pt x 527.72156pt>
+<fig/use_case_diagram.png, id=136, 789.70032pt x 527.72156pt>
 File: fig/use_case_diagram.png Graphic file (type png)
 
 <use fig/use_case_diagram.png>
-Package pdftex.def Info: fig/use_case_diagram.png used on input line 232.
+Package pdftex.def Info: fig/use_case_diagram.png used on input line 237.
 (pdftex.def)             Requested size: 426.79134pt x 285.20697pt.
 
-Overfull \hbox (10.7269pt too wide) in paragraph at lines 232--233
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
-[7] <fig/klasy.png, id=141, 783.67781pt x 464.4853pt>
+[7] <fig/klasy.png, id=143, 592.46344pt x 408.77719pt>
 File: fig/klasy.png Graphic file (type png)
  <use fig/klasy.png>
-Package pdftex.def Info: fig/klasy.png used on input line 239.
-(pdftex.def)             Requested size: 426.79134pt x 252.95874pt.
+Package pdftex.def Info: fig/klasy.png used on input line 244.
+(pdftex.def)             Requested size: 426.79134pt x 294.48152pt.
 
-Overfull \hbox (10.7269pt too wide) in paragraph at lines 239--240
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 244--245
  [][] 
  []
 
@@ -897,194 +897,178 @@ Overfull \hbox (10.7269pt too wide) in paragraph at lines 239--240
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.243 \subsection
+l.248 \subsection
                  {Wyjściowa funkcjonalność} <./fig/use_case_diagram.png>]
 [9pdfTeX warning (ext4): destination with the same identifier (name{figure.1.2}
 ) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.263 \subsection
-                 {Opis projektu w całkowitym ujęciu} <./fig/klasy.png>]
-Overfull \hbox (358.64003pt too wide) in paragraph at lines 297--297
+l.266 U
+       żytkownik ma możliwość usunięcia konta z serwisu. w takim przypa...
+ <./fig/klasy.png>]
+Overfull \hbox (358.64003pt too wide) in paragraph at lines 312--312
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
 ) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
  []
 
 
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 298--298
+Overfull \hbox (25.21614pt too wide) in paragraph at lines 313--313
  []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
 t(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (364.38872pt too wide) in paragraph at lines 299--299
+Overfull \hbox (364.38872pt too wide) in paragraph at lines 314--314
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
 0) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
  []
 
-
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 300--300
+[10]
+Overfull \hbox (25.21614pt too wide) in paragraph at lines 315--315
  []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
 t(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (255.16365pt too wide) in paragraph at lines 302--302
+Overfull \hbox (255.16365pt too wide) in paragraph at lines 317--317
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne SELECT kategoria\_id, nazwa, id\_n
 adrzednej, 0 FROM kategoria WHERE kategoria\_id=id\_kat;[] 
  []
 
 
-Overfull \hbox (577.09016pt too wide) in paragraph at lines 305--305
+Overfull \hbox (577.09016pt too wide) in paragraph at lines 320--320
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, nazwa, id\_
 nadrzednej, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM
  podrzedne WHERE przetworzona=0);[] 
  []
 
-[10]
-Overfull \hbox (59.70827pt too wide) in paragraph at lines 326--326
+
+Overfull \hbox (59.70827pt too wide) in paragraph at lines 341--341
  []\OT4/cmtt/m/n/10.95 SELECT id\_nadrzednej FROM kategoria WHERE kategoria\_id
 =kat\_id INTO kat\_id;[] 
  []
 
 
-Overfull \hbox (266.66103pt too wide) in paragraph at lines 337--337
+Overfull \hbox (266.66103pt too wide) in paragraph at lines 352--352
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
 ) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
  []
 
 
-Overfull \hbox (272.40971pt too wide) in paragraph at lines 338--338
+Overfull \hbox (272.40971pt too wide) in paragraph at lines 353--353
  []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
 0) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
  []
 
-
-Overfull \hbox (444.87035pt too wide) in paragraph at lines 343--343
+[11]
+Overfull \hbox (444.87035pt too wide) in paragraph at lines 358--358
  []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kate
 goria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetw
 orzona=0);[] 
  []
 
 
-Overfull \hbox (778.29424pt too wide) in paragraph at lines 350--350
+Overfull \hbox (778.29424pt too wide) in paragraph at lines 365--365
  []\OT4/cmtt/m/n/10.95 SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa 
 AS nazwa\_kat  FROM produkt p JOIN kategoria k USING(kategoria\_id) WHERE p.blo
 kada=0 AND k.kategoria\_id IN (SELECT kategoria\_id FROM podrzedne);[] 
  []
 
-[11]
-Overfull \hbox (214.92284pt too wide) in paragraph at lines 364--364
+
+Overfull \hbox (214.92284pt too wide) in paragraph at lines 379--379
  []\OT4/cmtt/m/n/10.95 SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycj
 a WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;[] 
  []
 
 
-Overfull \hbox (749.5508pt too wide) in paragraph at lines 365--365
+Overfull \hbox (749.5508pt too wide) in paragraph at lines 380--380
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_ed
 ycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_i
 d AND kolumna='nazwa' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 366--366
+Overfull \hbox (738.05342pt too wide) in paragraph at lines 381--381
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edy
 cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
  AND kolumna='cena' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 367--367
+Overfull \hbox (738.05342pt too wide) in paragraph at lines 382--382
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edy
 cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
  AND kolumna='opis' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (772.54555pt too wide) in paragraph at lines 368--368
+Overfull \hbox (772.54555pt too wide) in paragraph at lines 383--383
  []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_
 edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\
 _id AND kolumna='blokada' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
  []
 
 
-Overfull \hbox (795.5403pt too wide) in paragraph at lines 370--370
+Overfull \hbox (795.5403pt too wide) in paragraph at lines 385--385
  []\OT4/cmtt/m/n/10.95 SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(p
 oprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_b
 lokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id;[] 
  []
 
 
-Overfull \hbox (157.43596pt too wide) in paragraph at lines 380--380
+Overfull \hbox (157.43596pt too wide) in paragraph at lines 395--395
  []\OT4/cmtt/m/n/10.95 RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\
 _edycja` WHERE `produkt\_id`=produktid) 
  []
 
 ) (./tex/interfejs.tex [12]
  2.
-<fig/interfejs.png, id=180, 840.89156pt x 696.35156pt>
+<fig/interfejs.png, id=185, 840.89156pt x 696.35156pt>
 File: fig/interfejs.png Graphic file (type png)
  <use fig/interfejs.png>
-Package pdftex.def Info: fig/interfejs.png used on input line 5.
-(pdftex.def)             Requested size: 426.79134pt x 353.43452pt.
+Package pdftex.def Info: fig/interfejs.png used on input line 4.
+(pdftex.def)             Requested size: 483.70135pt x 284.52844pt.
 
-Overfull \hbox (10.7269pt too wide) in paragraph at lines 5--6
+Overfull \hbox (67.63692pt too wide) in paragraph at lines 4--5
  [][] 
  []
 
+<fig/menu_nie_zalogowany.png, id=186, 205.5178pt x 475.7775pt>
+File: fig/menu_nie_zalogowany.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) in paragraph at lines 9--10
-
- []
-
-[13
+<use fig/menu_nie_zalogowany.png>
+Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 11.
+(pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
+ [13
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.12 session\_start();
-                       <./fig/interfejs.png>]
-Overfull \hbox (84.0714pt too wide) in paragraph at lines 49--49
-[]\OT4/cmtt/m/n/10.95 if(isset(\$\_POST['login']) AND isset(\$\_POST['password'
-])) include('ctrl/login.php');[] 
- []
-
-
-Overfull \hbox (141.55827pt too wide) in paragraph at lines 54--54
-[]\OT4/cmtt/m/n/10.95 if(isset(\$\_POST['login']) AND isset(\$\_POST['password'
-])) include('ctrl/login-pracownik.php');[] 
- []
-
-[14] <fig/menu_nie_zalogowany.png, id=191, 205.5178pt x 475.7775pt>
-File: fig/menu_nie_zalogowany.png Graphic file (type png)
-
-<use fig/menu_nie_zalogowany.png>
-Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 106.
-(pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
- [15]
-<fig/menu_rozwijanie.png, id=196, 205.5178pt x 448.67625pt>
+l.15 
+      <./fig/interfejs.png>]
+<fig/menu_rozwijanie.png, id=193, 205.5178pt x 448.67625pt>
 File: fig/menu_rozwijanie.png Graphic file (type png)
 
 <use fig/menu_rozwijanie.png>
-Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 113.
+Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 18.
 (pdftex.def)             Requested size: 205.5173pt x 448.67516pt.
-) (./tex/kody_zrodlowe.tex [16pdfTeX warning (ext4): destination with the same 
+) (./tex/kody_zrodlowe.tex [14pdfTeX warning (ext4): destination with the same 
 identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
-     <./fig/menu_nie_zalogowany.png>]) (./tex/bibrystab.tex [17pdfTeX warning (
+     <./fig/menu_nie_zalogowany.png>]) (./tex/bibrystab.tex [15pdfTeX warning (
 ext4): destination with the same identifier (name{figure.2.3}) has been already
  used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \begin {thebibliography}{}
-                                <./fig/menu_rozwijanie.png>] [18
+                                <./fig/menu_rozwijanie.png>] [16
 
 ]
 (./dokumentacja_projektu_bd_sklep_internetowy.lof)
@@ -1093,7 +1077,7 @@ l.17 \begin {thebibliography}{}
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
- [19
+ [17
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
@@ -1103,31 +1087,32 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `dokumentacja_projektu_bd_sklep_internetowy.o
 ut' has not changed.
-(rerunfilecheck)             Checksum: 7B43210D57B419D76B0D11C4337C14E3;1114.
+(rerunfilecheck)             Checksum: 263C0ECC36265F724F4848397A800C44;1220.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 8907 strings out of 493054
- 125335 string characters out of 6138326
+ 8912 strings out of 493054
+ 125399 string characters out of 6138326
  248774 words of memory out of 5000000
- 12173 multiletter control sequences out of 15000+600000
- 16574 words of font info for 51 fonts, out of 8000000 for 9000
+ 12176 multiletter control sequences out of 15000+600000
+ 18204 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 34i,11n,52p,436b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,52p,436b,534s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plit.enc}{c:/texlive/2015/texm
 f-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/
 pl/pltt.enc}<c:/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx10.pfb><c:/texlive/201
 5/texmf-dist/fonts/type1/public/pl/plbx12.pfb><c:/texlive/2015/texmf-dist/fonts
 /type1/public/pl/plbx9.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/pl
-r10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/
-2015/texmf-dist/fonts/type1/public/pl/plti10.pfb><c:/texlive/2015/texmf-dist/fo
-nts/type1/public/pl/pltt10.pfb>
-Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (19 pages, 455
-131 bytes).
+bxti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr10.pfb><c:/texl
+ive/2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/2015/texmf-dist/
+fonts/type1/public/pl/plti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public
+/pl/pltt10.pfb>
+Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (17 pages, 415
+881 bytes).
 PDF statistics:
- 274 PDF objects out of 1000 (max. 8388607)
- 237 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 500000)
+ 272 PDF objects out of 1000 (max. 8388607)
+ 236 compressed objects within 3 object streams
+ 81 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
