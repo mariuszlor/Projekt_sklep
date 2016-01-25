@@ -1,12 +1,14 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:19
 entering extended mode
-**dokumentacja_projektu_bd_sklep_internetowy.tex
-(dokumentacja_projektu_bd_sklep_internetowy.tex
-LaTeX2e <2015/01/01> patch level 2
-Babel <3.9m> and hyphenation patterns for 69 languages loaded.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\book.cls"
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./dokumentacja_projektu_bd_sklep_internetowy.tex
+(./dokumentacja_projektu_bd_sklep_internetowy.tex
+LaTeX2e <2015/10/01> patch level 1
+Babel <3.9m> and hyphenation patterns for 79 languages loaded.
+(c:/texlive/2015/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\fleqn.clo"
+(c:/texlive/2015/texmf-dist/tex/latex/base/fleqn.clo
 File: fleqn.clo 2015/03/31 v1.1i Standard LaTeX option (flush left equations)
 \mathindent=\dimen102
 Applying: [2015/01/01] Make \[ robust on input line 50.
@@ -16,7 +18,7 @@ Applying: [2015/01/01] Make \] robust on input line 74.
 LaTeX Info: Redefining \] on input line 75.
 Already applied: [0000/00/00] Make \] robust on input line 83.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\bk11.clo"
+(c:/texlive/2015/texmf-dist/tex/latex/base/bk11.clo
 File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count79
@@ -32,42 +34,44 @@ File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen103
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\color.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\color.cfg"
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 142.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\pdftex-def\pdftex.def"
+(c:/texlive/2015/texmf-dist/tex/latex/pdftex-def/pdftex.def
 File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\infwarerr.sty"
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\ltxcmds.sty"
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
 \Gread@gobject=\count88
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\inputenc.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
 \inpenc@prehook=\toks14
 \inpenc@posthook=\toks15
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 Now handling font encoding OML ...
 ... no UTF-8 mapping file for font encoding OML
 Now handling font encoding T1 ...
 ... processing UTF-8 mapping file for font encoding T1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1enc.dfu"
-File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
    defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00BB (decimal 187)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C0 (decimal 192)
@@ -188,6 +192,10 @@ File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+016F (decimal 367)
    defining Unicode char U+0170 (decimal 368)
    defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
    defining Unicode char U+0178 (decimal 376)
    defining Unicode char U+0179 (decimal 377)
    defining Unicode char U+017A (decimal 378)
@@ -195,6 +203,10 @@ File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+017C (decimal 380)
    defining Unicode char U+017D (decimal 381)
    defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+200C (decimal 8204)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
@@ -213,10 +225,12 @@ File: t1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
 Now handling font encoding OT1 ...
 ... processing UTF-8 mapping file for font encoding OT1
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot1enc.dfu"
-File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
+   defining Unicode char U+00A0 (decimal 160)
    defining Unicode char U+00A1 (decimal 161)
    defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AD (decimal 173)
    defining Unicode char U+00B8 (decimal 184)
    defining Unicode char U+00BF (decimal 191)
    defining Unicode char U+00C5 (decimal 197)
@@ -234,6 +248,14 @@ File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
    defining Unicode char U+0142 (decimal 322)
    defining Unicode char U+0152 (decimal 338)
    defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0174 (decimal 372)
+   defining Unicode char U+0175 (decimal 373)
+   defining Unicode char U+0176 (decimal 374)
+   defining Unicode char U+0177 (decimal 375)
+   defining Unicode char U+0218 (decimal 536)
+   defining Unicode char U+0219 (decimal 537)
+   defining Unicode char U+021A (decimal 538)
+   defining Unicode char U+021B (decimal 539)
    defining Unicode char U+2013 (decimal 8211)
    defining Unicode char U+2014 (decimal 8212)
    defining Unicode char U+2018 (decimal 8216)
@@ -244,8 +266,8 @@ File: ot1enc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
 Now handling font encoding OMS ...
 ... processing UTF-8 mapping file for font encoding OMS
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omsenc.dfu"
-File: omsenc.dfu 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2015/09/07 v1.1p UTF-8 support for inputenc
    defining Unicode char U+00A7 (decimal 167)
    defining Unicode char U+00B6 (decimal 182)
    defining Unicode char U+00B7 (decimal 183)
@@ -268,16 +290,16 @@ Now handling font encoding U ...
    defining Unicode char U+2122 (decimal 8482)
    defining Unicode char U+2423 (decimal 9251)
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hyperref.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-hyperref.sty"
-Package: hobsub-hyperref 2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2012/05/28 v1.13 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\hobsub-generic.sty"
-Package: hobsub-generic 2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
-Package: hobsub 2012/04/25 v1.12 Construct package bundles (HO)
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2012/05/28 v1.13 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2012/05/28 v1.13 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
 Package hobsub Info: Skipping package `ltxcmds' (already loaded).
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
@@ -308,7 +330,7 @@ Package: uniquecounter 2011/01/30 v1.2 Provide unlimited unique counter (HO)
 )
 Package hobsub Info: Skipping package `hobsub' (already loaded).
 Package: letltxmacro 2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
-Package: hopatch 2011/06/24 v1.1 Wrapper for package hooks (HO)
+Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
@@ -316,31 +338,31 @@ Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\keyval.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.sty"
+(c:/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\auxhook.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/auxhook.sty
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
 \@linkdim=\dimen104
 \Hy@linkcounter=\count89
 \Hy@pagecounter=\count90
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\pd1enc.def"
+(c:/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 \Hy@SavedSpaceFactor=\count91
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\hyperref.cfg"
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `breaklinks' set `true' on input line 4319.
@@ -353,7 +375,7 @@ Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
 \c@Hy@tempcnt=\count92
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\url\url.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
@@ -378,22 +400,21 @@ LaTeX Info: Redefining \pageref on input line 6369.
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\hpdftex.def"
+(c:/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count97
 \c@bookmark@seq@number=\count98
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\rerunfilecheck.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip43
 )
-(pracadok.sty
+(./pracadok.sty
 Package: pracadok 2009/06/19 macros for preparing thesis
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
+ (c:/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@cnth=\count99
 \Gm@cntv=\count100
@@ -407,12 +428,11 @@ Package: geometry 2010/09/12 v5.6 Page Geometry
 \Gm@layouthoffset=\dimen114
 \Gm@layoutvoffset=\dimen115
 \Gm@dimlist=\toks17
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amssymb.sty"
+)
+(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \@emptytoks=\toks18
 \symAMSa=\mathgroup4
@@ -420,24 +440,24 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsmath.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amstext.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsgen.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks19
 \ex@=\dimen116
 ))
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsbsy.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen117
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsmath\amsopn.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count102
@@ -478,14 +498,13 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\polski.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/polski/polski.sty
 Package: polski 2008/02/24 v1.3.3 Polish language package
 
 Document language package `polski' v1.3.3 <2008/02/24>
    Inputenc package detected. Catcodes not changed.
-\l@nohyphenation=\language70
    Switching to Polish text encoding and Polish maths fonts.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ot4enc.def"
+(c:/texlive/2015/texmf-dist/tex/latex/base/ot4enc.def
 File: ot4enc.def 2005/09/27 v1.99g Standard LaTeX file
 Now handling font encoding OT4 ...
 ... no UTF-8 mapping file for font encoding OT4
@@ -493,7 +512,7 @@ Now handling font encoding OT4 ...
 LaTeX Font Info:    Try loading font information for OT4+cmr on input line 346.
 
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\ot4cmr.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/polski/ot4cmr.fd
 File: ot4cmr.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
@@ -528,24 +547,24 @@ LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
 (Font)                  OMS/cmsy/b/n --> OMS/plsy/b/n on input line 346.
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphicx.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\graphics.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2014/10/28 v1.0p Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\00miktex\graphics.cfg"
-File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
 Package graphics Info: Driver file: pdftex.def on input line 94.
 )
 \Gin@req@height=\dimen125
 \Gin@req@width=\dimen126
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count114
 \lst@gtempboxa=\box28
 \lst@token=\toks24
@@ -559,18 +578,18 @@ Package graphics Info: Driver file: pdftex.def on input line 94.
 \lst@lineno=\count119
 \lst@maxwidth=\dimen130
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count120
 \lst@skipnumbers=\count121
 \lst@framebox=\box29
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\listings.cfg"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip47
 \f@ncyO@elh=\skip48
 \f@ncyO@erh=\skip49
@@ -594,7 +613,7 @@ Package: listings 2015/06/04 1.6 (Carsten Heinz)
 \c@rozwiazaniee=\count131
 \c@example@=\count132
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\longtable.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip56
 \LTright=\skip57
@@ -612,7 +631,7 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count137
 \LT@p@ftn=\toks25
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\array.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/tools/array.sty
 Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \col@sep=\dimen133
 \extrarowheight=\dimen134
@@ -620,7 +639,7 @@ Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
 \extratabsurround=\skip60
 \backup@length=\skip61
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\float\float.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count138
 \float@exts=\toks27
@@ -628,13 +647,15 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks28
 \@floatcapt=\box35
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\verbatim.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks29
 \verbatim@line=\toks30
 \verbatim@in@stream=\read1
 )
-(dokumentacja_projektu_bd_sklep_internetowy.aux)
+(./dokumentacja_projektu_bd_sklep_internetowy.aux)
+\openout1 = `dokumentacja_projektu_bd_sklep_internetowy.aux'.
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
@@ -652,7 +673,7 @@ LaTeX Font Info:    ... okay on input line 23.
 LaTeX Font Info:    Checking defaults for OT4/cmr/m/n on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
+(c:/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count139
 \scratchdimen=\dimen135
@@ -668,10 +689,10 @@ LaTeX Font Info:    ... okay on input line 23.
 )
 \AtBeginShipoutBox=\box37
 Package hyperref Info: Link coloring OFF on input line 23.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+ (c:/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+(c:/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count145
@@ -680,9 +701,11 @@ LaTeX Info: Redefining \ref on input line 23.
 LaTeX Info: Redefining \pageref on input line 23.
 LaTeX Info: Redefining \nameref on input line 23.
 
-(dokumentacja_projektu_bd_sklep_internetowy.out)
-(dokumentacja_projektu_bd_sklep_internetowy.out)
+(./dokumentacja_projektu_bd_sklep_internetowy.out)
+(./dokumentacja_projektu_bd_sklep_internetowy.out)
 \@outlinefile=\write3
+\openout3 = `dokumentacja_projektu_bd_sklep_internetowy.out'.
+
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -718,34 +741,51 @@ LaTeX Info: Redefining \nameref on input line 23.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
+
+(c:/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
+)
+Package grfext Info: Graphics extension search list:
+(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 452.
+
+(c:/texlive/2015/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 \c@lstlisting=\count146
-(tex/tytul.tex
+
+(./tex/tytul.tex
 LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 19.
 
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\ot4cmtt.fd"
+ (c:/texlive/2015/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
-)) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+))
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 ) [1
 
-{C:/Users/PiotrJ/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
-(dokumentacja_projektu_bd_sklep_internetowy.toc
+{c:/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+(./dokumentacja_projektu_bd_sklep_internetowy.toc
 LaTeX Font Info:    Try loading font information for OML+plm on input line 2.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omlplm.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/polski/omlplm.fd
 File: omlplm.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Try loading font information for OMS+plsy on input line 2.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omsplsy.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/polski/omsplsy.fd
 File: omsplsy.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    Try loading font information for OMX+plex on input line 2.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\polski\omxplex.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/polski/omxplex.fd
 File: omxplex.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
 LaTeX Font Info:    External font `plex10' loaded for size
@@ -756,21 +796,24 @@ LaTeX Font Info:    External font `plex10' loaded for size
 (Font)              <5> on input line 2.
 LaTeX Font Info:    Try loading font information for U+msa on input line 2.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Try loading font information for U+msb on input line 2.
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 \tf@toc=\write4
- (tex/main.tex [2
+\openout4 = `dokumentacja_projektu_bd_sklep_internetowy.toc'.
+
+ (./tex/main.tex
+[2
 
 ]
  1.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 6.
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+(c:/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
@@ -828,7 +871,7 @@ Overfull \hbox (14.83011pt too wide) in paragraph at lines 194--204
 [][] 
  []
 
-<fig/use_case_diagram.png, id=135, 789.70032pt x 527.72156pt>
+<fig/use_case_diagram.png, id=136, 789.70032pt x 527.72156pt>
 File: fig/use_case_diagram.png Graphic file (type png)
 
 <use fig/use_case_diagram.png>
@@ -839,7 +882,7 @@ Overfull \hbox (10.7269pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
-[7] <fig/klasy.png, id=142, 592.46344pt x 408.77719pt>
+[7] <fig/klasy.png, id=143, 592.46344pt x 408.77719pt>
 File: fig/klasy.png Graphic file (type png)
  <use fig/klasy.png>
 Package pdftex.def Info: fig/klasy.png used on input line 244.
@@ -863,125 +906,122 @@ l.248 \subsection
                                                   \fi \fi 
 l.266 U
        żytkownik ma możliwość usunięcia konta z serwisu. w takim przypa...
- <./fig/klasy.png>]
-Overfull \hbox (358.64003pt too wide) in paragraph at lines 312--312
- []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
-) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
+ <./fig/klasy.png>] (c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+) (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 312.
+
+Overfull \hbox (274.3253pt too wide) in paragraph at lines 312--313
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
  []
 
 
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 313--313
- []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
-t(1) DEFAULT 0);[] 
+Overfull \hbox (279.42542pt too wide) in paragraph at lines 314--315
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][] 
  []
 
 
-Overfull \hbox (364.38872pt too wide) in paragraph at lines 314--314
- []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
-0) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,[] 
+Overfull \hbox (182.52327pt too wide) in paragraph at lines 317--319
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+] 
  []
 
 [10]
-Overfull \hbox (25.21614pt too wide) in paragraph at lines 315--315
- []\OT4/cmtt/m/n/10.95 `id\_nadrzednej` int(10) unsigned, `przetworzona` tinyin
-t(1) DEFAULT 0);[] 
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 319.
+
+ (c:/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 319.
+
+Overfull \hbox (468.1296pt too wide) in paragraph at lines 320--321
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][] 
+ []
+
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+Overfull \hbox (9.11943pt too wide) in paragraph at lines 341--342
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
+ []
+
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+Overfull \hbox (192.7235pt too wide) in paragraph at lines 352--353
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (255.16365pt too wide) in paragraph at lines 317--317
- []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne SELECT kategoria\_id, nazwa, id\_n
-adrzednej, 0 FROM kategoria WHERE kategoria\_id=id\_kat;[] 
+Overfull \hbox (197.82361pt too wide) in paragraph at lines 353--355
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (577.09016pt too wide) in paragraph at lines 320--320
- []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, nazwa, id\_
-nadrzednej, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM
- podrzedne WHERE przetworzona=0);[] 
+Overfull \hbox (350.827pt too wide) in paragraph at lines 358--359
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][] 
  []
 
 
-Overfull \hbox (59.70827pt too wide) in paragraph at lines 341--341
- []\OT4/cmtt/m/n/10.95 SELECT id\_nadrzednej FROM kategoria WHERE kategoria\_id
-=kat\_id INTO kat\_id;[] 
- []
-
-
-Overfull \hbox (266.66103pt too wide) in paragraph at lines 352--352
- []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10
-) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
- []
-
-
-Overfull \hbox (272.40971pt too wide) in paragraph at lines 353--353
- []\OT4/cmtt/m/n/10.95 CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(1
-0) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);[] 
+Overfull \hbox (646.63354pt too wide) in paragraph at lines 365--367
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][] 
  []
 
 [11]
-Overfull \hbox (444.87035pt too wide) in paragraph at lines 358--358
- []\OT4/cmtt/m/n/10.95 INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kate
-goria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetw
-orzona=0);[] 
+Overfull \hbox (146.82248pt too wide) in paragraph at lines 379--380
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (778.29424pt too wide) in paragraph at lines 365--365
- []\OT4/cmtt/m/n/10.95 SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa 
-AS nazwa\_kat  FROM produkt p JOIN kategoria k USING(kategoria\_id) WHERE p.blo
-kada=0 AND k.kategoria\_id IN (SELECT kategoria\_id FROM podrzedne);[] 
+Overfull \hbox (621.13298pt too wide) in paragraph at lines 380--381
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (214.92284pt too wide) in paragraph at lines 379--379
- []\OT4/cmtt/m/n/10.95 SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycj
-a WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;[] 
+Overfull \hbox (610.93275pt too wide) in paragraph at lines 381--382
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (749.5508pt too wide) in paragraph at lines 380--380
- []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_ed
-ycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_i
-d AND kolumna='nazwa' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
+Overfull \hbox (610.93275pt too wide) in paragraph at lines 382--383
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 381--381
- []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edy
-cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
- AND kolumna='cena' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
+Overfull \hbox (641.53343pt too wide) in paragraph at lines 383--385
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
 
-Overfull \hbox (738.05342pt too wide) in paragraph at lines 382--382
- []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edy
-cja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id
- AND kolumna='opis' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
+Overfull \hbox (661.93388pt too wide) in paragraph at lines 385--386
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (772.54555pt too wide) in paragraph at lines 383--383
- []\OT4/cmtt/m/n/10.95 SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_
-edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\
-_id AND kolumna='blokada' ORDER BY produkt\_edycja\_id ASC LIMIT 1;[] 
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+Overfull \hbox (136.62225pt too wide) in paragraph at lines 395--396
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-
-Overfull \hbox (795.5403pt too wide) in paragraph at lines 385--385
- []\OT4/cmtt/m/n/10.95 SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(p
-oprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_b
-lokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id;[] 
- []
-
-
-Overfull \hbox (157.43596pt too wide) in paragraph at lines 395--395
- []\OT4/cmtt/m/n/10.95 RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\
-_edycja` WHERE `produkt\_id`=produktid) 
- []
-
-) (tex/interfejs.tex [12]
+) (./tex/interfejs.tex [12]
  2.
-<fig/interfejs.png, id=183, 840.89156pt x 696.35156pt>
+<fig/interfejs.png, id=266, 840.89156pt x 696.35156pt>
 File: fig/interfejs.png Graphic file (type png)
  <use fig/interfejs.png>
 Package pdftex.def Info: fig/interfejs.png used on input line 4.
@@ -991,36 +1031,28 @@ Overfull \hbox (67.63692pt too wide) in paragraph at lines 4--5
  [][] 
  []
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang2.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
 Underfull \hbox (badness 10000) in paragraph at lines 8--9
 
  []
 
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
-)
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 10.
-
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\omlcmr.fd"
-File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 10.
- [13
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+) [13
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
@@ -1028,68 +1060,65 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.14 include(
-             'class/upr.php'); <./fig/interfejs.png>]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
- [14]
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+             'class/upr.php'); <./fig/interfejs.png>] [14]
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 ) [15]
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
-("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2015/06/27 v1.1n UTF-8 support for inputenc
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-<fig/menu_nie_zalogowany.png, id=325, 205.5178pt x 475.7775pt>
+<fig/menu_nie_zalogowany.png, id=405, 205.5178pt x 475.7775pt>
 File: fig/menu_nie_zalogowany.png Graphic file (type png)
 
 <use fig/menu_nie_zalogowany.png>
 Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 208.
 (pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
  [16]
-<fig/menu_rozwijanie.png, id=383, 205.5178pt x 448.67625pt>
+<fig/menu_rozwijanie.png, id=464, 205.5178pt x 448.67625pt>
 File: fig/menu_rozwijanie.png Graphic file (type png)
 
 <use fig/menu_rozwijanie.png>
 Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 215.
 (pdftex.def)             Requested size: 205.5173pt x 448.67516pt.
-) (tex/kody_zrodlowe.tex [17pdfTeX warning (ext4): destination with the same id
-entifier (name{figure.2.2}) has been already used, duplicate ignored
+) (./tex/kody_zrodlowe.tex [17pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.2.2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.1 
-     <./fig/menu_nie_zalogowany.png>]) (tex/bibrystab.tex [18pdfTeX warning (ex
-t4): destination with the same identifier (name{figure.2.3}) has been already u
-sed, duplicate ignored
+     <./fig/menu_nie_zalogowany.png>]) (./tex/bibrystab.tex [18pdfTeX warning (
+ext4): destination with the same identifier (name{figure.2.3}) has been already
+ used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1097,8 +1126,10 @@ l.17 \begin {thebibliography}{}
                                 <./fig/menu_rozwijanie.png>] [19
 
 ]
-(dokumentacja_projektu_bd_sklep_internetowy.lof)
+(./dokumentacja_projektu_bd_sklep_internetowy.lof)
 \tf@lof=\write5
+\openout5 = `dokumentacja_projektu_bd_sklep_internetowy.lof'.
+
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
  [20
@@ -1106,42 +1137,41 @@ Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
 
-(dokumentacja_projektu_bd_sklep_internetowy.aux)
+(./dokumentacja_projektu_bd_sklep_internetowy.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `dokumentacja_projektu_bd_sklep_internetowy.o
 ut' has not changed.
-(rerunfilecheck)             Checksum: C4B58BCE773E7D542B511942DC5999ED;1235.
+(rerunfilecheck)             Checksum: 263C0ECC36265F724F4848397A800C44;1220.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 11543 strings out of 493673
- 168334 string characters out of 3141526
- 538897 words of memory out of 3000000
- 14419 multiletter control sequences out of 15000+200000
- 19324 words of font info for 57 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 34i,12n,52p,434b,4062s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plms.enc}{C:/Program Fi
-les (x86)/MiKTeX 2.9/fonts/enc/dvips/pl/plrm.enc}{C:/Program Files (x86)/MiKTeX
- 2.9/fonts/enc/dvips/pl/plit.enc}{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/d
-vips/pl/pltt.enc}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmmi8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmsy10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
-msy8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx10.pfb><C
-:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx12.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/pl/plbx8.pfb><C:/Program Files (x86)/M
-iKTeX 2.9/fonts/type1/public/pl/plbx9.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/public/pl/plbxti10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1
-/public/pl/plr10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/p
-lr8.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plr9.pfb><C:/P
-rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/pl/plsy8.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/pl/plti10.pfb><C:/Program Files (x86)/MiKT
-eX 2.9/fonts/type1/public/pl/pltt10.pfb>
-Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (20 pages, 523
-225 bytes).
+ 12005 strings out of 493054
+ 173810 string characters out of 6138326
+ 557808 words of memory out of 5000000
+ 14962 multiletter control sequences out of 15000+600000
+ 19324 words of font info for 57 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 35i,12n,52p,436b,4063s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{c:/texlive/2015/texm
+f-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/
+pl/plit.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/pltt.enc}<c:/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2015/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/
+public/pl/plbx10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx12.p
+fb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plbx8.pfb><c:/texlive/2015
+/texmf-dist/fonts/type1/public/pl/plbx9.pfb><c:/texlive/2015/texmf-dist/fonts/t
+ype1/public/pl/plbxti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/p
+lr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr8.pfb><c:/texlive
+/2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/2015/texmf-dist/fon
+ts/type1/public/pl/plsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/
+plti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
+Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (20 pages, 477
+313 bytes).
 PDF statistics:
- 514 PDF objects out of 1000 (max. 8388607)
- 259 named destinations out of 1000 (max. 500000)
+ 611 PDF objects out of 1000 (max. 8388607)
+ 564 compressed objects within 6 object streams
+ 335 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

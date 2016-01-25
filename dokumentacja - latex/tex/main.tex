@@ -305,7 +305,7 @@ Po stronie sklepu pozostaje wskazanie
 \subsection{Procedury wykorzystane w projekcie}
 \begin{enumerate}
 \item \textbf{kategoria\_lista\_podrzednych}
-\begin{verbatim}
+\begin{lstlisting}[language=SQL]
 BEGIN
 DECLARE n INT;
 SET n=1;
@@ -329,9 +329,9 @@ SELECT * FROM podrzedne;
 DROP TEMPORARY TABLE podrzedne;
 DROP TEMPORARY TABLE podrzedne2;
 END
-\end{verbatim}
+\end{lstlisting}
 \item menu\_drzewo\_kat
-\begin{verbatim}
+\begin{lstlisting}[language=SQL]
 BEGIN
 DECLARE kat\_id INT;
 IF pkat\_id IS NOT NULL THEN
@@ -343,9 +343,9 @@ END WHILE;
 END IF;
 SELECT * FROM kategoria WHERE id\_nadrzednej IS NULL;
 END
-\end{verbatim}
+\end{lstlisting}
 \item produkt\_by\_kategoria
-\begin{verbatim}
+\begin{lstlisting}[language=SQL]
 BEGIN
 DECLARE n INT;
 SET n=1;
@@ -367,7 +367,7 @@ SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa AS nazwa\_kat  FROM prod
 DROP TEMPORARY TABLE podrzedne;
 DROP TEMPORARY TABLE podrzedne2;
 END
-\end{verbatim}
+\end{}
 \item produkt\_hist
 \begin{verbatim}
 BEGIN
@@ -384,14 +384,14 @@ SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_edycja WHERE produkt\_ed
 
 SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(poprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_blokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id; 
 END
-\end{verbatim}
+\end{lstlisting}
 \end{enumerate}
 \subsection{Funkcje wykorzystane w projekcie}
 Funkcje wykorzystane w projektowanej bazie danych
 
 \begin{enumerate}
 	\item ostatnia\_produkt\_edycja\_id
-	\begin{verbatim}
+	\begin{lstlisting}[language=SQL]
 	RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\_edycja` WHERE `produkt\_id`=produktid)
-	\end{verbatim}
+	\end{lstlisting}
 \end{enumerate}
