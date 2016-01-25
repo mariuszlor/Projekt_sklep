@@ -1,6 +1,12 @@
-\chapter{Projektowanie Bazy Danych}
-Projekt: Przygotowanie Systemu Zarządzania Bazą Danych (dalej SZBD) zawierającego interfejs i bazę danych dla sklepu internetowego zajmującego się sprzedażą akcesorii kuchenych\\
-Obecnie zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
+\chapter{Projektowanie Bazy Danych \textit{Sklepu Internetowego z Akcesoriami Kuchennymi}}
+Projekt: Przygotowanie serwisu internetowego (sklepu internetowego) zajmującego się sprzedażą akcesorii kuchenych.\\
+Obecnie zamawiający sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
+W skład projektu wchodzi przygotowanie:
+\begin{itemize}
+\item Bazy danych
+\item Interfejsu graficznego
+\end{itemize}
+Obecnie zamawiający sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
 \section{Sformułowanie celu i zadań}
 \begin{enumerate}
 \item Minimalizacja czasu
@@ -41,7 +47,6 @@ Problemy:
 	\item Dane wyszukiwane są ręcznie.
 	\item Duże ryzyko błędu ludzkiego podczas ręcznego przenoszenia danych. 
 \end{enumerate}
-
 
 \subsection{Lista tabel w projektowanej bazie}
 
@@ -274,20 +279,30 @@ Administrator ma mieć możliwość:
 \end{enumerate}
 Dla użytkownika serwisu przewidziano nastepujące możliwości
 \begin{enumerate}
-\item zarejestrowanie konta w serwisie
-\item dostep do ustawień konta w których znajduje się:
+\item Wyświetlanie listy kategorii produktów
+\item Zarejestrowanie konta w serwisie
+\item Dostep do ustawień konta w których znajduje się:
 \begin{itemize}
 \item możliwośc edycji podstawowych danych
 \item możliwość zmiany hasła do konta
 \end{itemize}
-\item koszyk
+\item Koszyk
 \begin{itemize}
-	\item dodawanie produktów do koszyka z możliwością wyboru ilości sztuk
+\item dodawanie produktów do koszyka z możliwością wyboru ilości sztuk
+\item potwierdzenie transakcji.
 \end{itemize}
+
 \end{enumerate}	
+
+Rozliczenie z klientem będzie odbywać się za pomocą zewnętrzego systemu płatniczego.\\
+Po stronie sklepu pozostaje wskazanie
+\begin{enumerate}
+	\item Numeru konta do przelewu
+	\item Tytułu wpłaty
+\end{enumerate}
 \section{Definiowanie tabel, wiezów integralnosci, perspektyw}
 
-\subsection{Procedury}
+\subsection{Procedury wykorzystane w projekcie}
 \begin{enumerate}
 \item \textbf{kategoria\_lista\_podrzednych}
 \begin{verbatim}
@@ -371,7 +386,7 @@ SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(poprz\_cena,cena) AS cena
 END
 \end{verbatim}
 \end{enumerate}
-\subsection{Funkcje}
+\subsection{Funkcje wykorzystane w projekcie}
 Funkcje wykorzystane w projektowanej bazie danych
 
 \begin{enumerate}

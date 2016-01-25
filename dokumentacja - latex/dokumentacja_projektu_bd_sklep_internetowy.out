@@ -1,4 +1,4 @@
-\BOOKMARK [0][-]{chapter.1}{Projektowanie Bazy Danych}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Projektowanie Bazy Danych Sklepu Internetowego z Akcesoriami Kuchennymi}{}% 1
 \BOOKMARK [1][-]{section.1.1}{Sformu\233owanie celu i zadan}{chapter.1}% 2
 \BOOKMARK [2][-]{subsection.1.1.1}{Analiza istniejacej bazy \204 analiza stanu wyjsciowego}{section.1.1}% 3
 \BOOKMARK [2][-]{subsection.1.1.2}{Lista tabel w projektowanej bazie}{section.1.1}% 4
@@ -8,8 +8,8 @@
 \BOOKMARK [2][-]{subsection.1.1.6}{Wyjsciowa funkcjonalnosc}{section.1.1}% 8
 \BOOKMARK [2][-]{subsection.1.1.7}{Opis projektu w ca\233kowitym ujeciu}{section.1.1}% 9
 \BOOKMARK [1][-]{section.1.2}{Definiowanie tabel, wiez\363w integralnosci, perspektyw}{chapter.1}% 10
-\BOOKMARK [2][-]{subsection.1.2.1}{Procedury}{section.1.2}% 11
-\BOOKMARK [2][-]{subsection.1.2.2}{Funkcje}{section.1.2}% 12
-\BOOKMARK [0][-]{chapter.2}{Interfejs - strona internetowa}{}% 13
+\BOOKMARK [2][-]{subsection.1.2.1}{Procedury wykorzystane w projekcie}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.2}{Funkcje wykorzystane w projekcie}{section.1.2}% 12
+\BOOKMARK [0][-]{chapter.2}{Interfejs graficzny - strona internetowa}{}% 13
 \BOOKMARK [0][-]{chapter*.2}{Bibliografia}{}% 14
 \BOOKMARK [0][-]{chapter*.3}{Spis rysunk\363w}{}% 15
