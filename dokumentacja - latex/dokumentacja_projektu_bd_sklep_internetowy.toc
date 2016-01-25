@@ -10,6 +10,7 @@
 \contentsline {section}{\numberline {1.2}Definiowanie tabel, wiez\IeC {\'o}w integralnosci, perspektyw}{10}{section.1.2}
 \contentsline {subsection}{\numberline {1.2.1}Procedury wykorzystane w projekcie}{10}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Funkcje wykorzystane w projekcie}{12}{subsection.1.2.2}
-\contentsline {chapter}{\numberline {2}Interfejs graficzny - strona internetowa}{13}{chapter.2}
-\contentsline {chapter}{Bibliografia}{19}{chapter*.2}
-\contentsline {chapter}{Spis rysunk\'ow}{20}{chapter*.3}
+\contentsline {subsection}{\numberline {1.2.3}Wyzwalacze wykorzystane w projekcie}{12}{subsection.1.2.3}
+\contentsline {chapter}{\numberline {2}Interfejs graficzny - strona internetowa}{14}{chapter.2}
+\contentsline {chapter}{Bibliografia}{26}{chapter*.2}
+\contentsline {chapter}{Spis rysunk\'ow}{27}{chapter*.3}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -871,7 +871,7 @@ Overfull \hbox (14.83011pt too wide) in paragraph at lines 194--204
 [][] 
  []
 
-<fig/use_case_diagram.png, id=136, 789.70032pt x 527.72156pt>
+<fig/use_case_diagram.png, id=141, 789.70032pt x 527.72156pt>
 File: fig/use_case_diagram.png Graphic file (type png)
 
 <use fig/use_case_diagram.png>
@@ -882,7 +882,7 @@ Overfull \hbox (10.7269pt too wide) in paragraph at lines 237--238
  [][] 
  []
 
-[7] <fig/klasy.png, id=143, 592.46344pt x 408.77719pt>
+[7] <fig/klasy.png, id=149, 592.46344pt x 408.77719pt>
 File: fig/klasy.png Graphic file (type png)
  <use fig/klasy.png>
 Package pdftex.def Info: fig/klasy.png used on input line 244.
@@ -906,122 +906,59 @@ l.248 \subsection
                                                   \fi \fi 
 l.266 U
        żytkownik ma możliwość usunięcia konta z serwisu. w takim przypa...
- <./fig/klasy.png>] (c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2015/06/04 1.6 listings language file
-) (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+ <./fig/klasy.png>] (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+(c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+) [10]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 312.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 318.
 
-Overfull \hbox (274.3253pt too wide) in paragraph at lines 312--313
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
- []
-
-
-Overfull \hbox (279.42542pt too wide) in paragraph at lines 314--315
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][] 
- []
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+LaTeX Font Info:    Try loading font information for OML+cmr on input line 341.
 
 
-Overfull \hbox (182.52327pt too wide) in paragraph at lines 317--319
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-] 
- []
-
-[10]
-LaTeX Font Info:    Try loading font information for OML+cmr on input line 319.
-
- (c:/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
+(c:/texlive/2015/texmf-dist/tex/latex/base/omlcmr.fd
 File: omlcmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <8> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 319.
-
-Overfull \hbox (468.1296pt too wide) in paragraph at lines 320--321
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][] 
- []
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 341.
 
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-)
-Overfull \hbox (9.11943pt too wide) in paragraph at lines 341--342
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
+) [11]
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-Overfull \hbox (192.7235pt too wide) in paragraph at lines 352--353
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (197.82361pt too wide) in paragraph at lines 353--355
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (350.827pt too wide) in paragraph at lines 358--359
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][] 
- []
-
-
-Overfull \hbox (646.63354pt too wide) in paragraph at lines 365--367
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
-[][][][] 
- []
-
-[11]
-Overfull \hbox (146.82248pt too wide) in paragraph at lines 379--380
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (621.13298pt too wide) in paragraph at lines 380--381
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (610.93275pt too wide) in paragraph at lines 381--382
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (610.93275pt too wide) in paragraph at lines 382--383
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (641.53343pt too wide) in paragraph at lines 383--385
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-
-Overfull \hbox (661.93388pt too wide) in paragraph at lines 385--386
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
-][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
-Overfull \hbox (136.62225pt too wide) in paragraph at lines 395--396
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
- []
-
-) (./tex/interfejs.tex [12]
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+)
+(c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
+File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
+) [12]) (./tex/interfejs.tex [13]
  2.
-<fig/interfejs.png, id=267, 840.89156pt x 696.35156pt>
+<fig/interfejs.png, id=313, 840.89156pt x 696.35156pt>
 File: fig/interfejs.png Graphic file (type png)
  <use fig/interfejs.png>
 Package pdftex.def Info: fig/interfejs.png used on input line 5.
@@ -1052,7 +989,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-) [13
+) [14
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1}) 
 has been already used, duplicate ignored
@@ -1060,7 +997,7 @@ has been already used, duplicate ignored
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.12 session_start(
-                   ); <./fig/interfejs.png>] [14]
+                   ); <./fig/interfejs.png>] [15]
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
@@ -1072,7 +1009,7 @@ File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-) [15]
+) [16]
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
@@ -1096,34 +1033,171 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-) [16]
-<fig/menu_nie_zalogowany.png, id=466, 205.5178pt x 475.7775pt>
+) [17]
+<fig/menu_nie_zalogowany.png, id=511, 205.5178pt x 475.7775pt>
 File: fig/menu_nie_zalogowany.png Graphic file (type png)
 
 <use fig/menu_nie_zalogowany.png>
 Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 217.
 (pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
 
-<fig/menu_rozwijanie.png, id=469, 205.5178pt x 448.67625pt>
+<fig/menu_rozwijanie.png, id=514, 205.5178pt x 448.67625pt>
 File: fig/menu_rozwijanie.png Graphic file (type png)
 
 <use fig/menu_rozwijanie.png>
 Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 224.
 (pdftex.def)             Requested size: 205.5173pt x 448.67516pt.
- [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+ [18pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
 2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.227 \end{figure}
-                   <./fig/menu_nie_zalogowany.png>]) (./tex/kody_zrodlowe.tex)
-(./tex/bibrystab.tex [18pdfTeX warning (ext4): destination with the same identi
-fier (name{figure.2.3}) has been already used, duplicate ignored
+                   <./fig/menu_nie_zalogowany.png>]
+<fig/pracownik_logowanie.png, id=522, 603.0028pt x 219.06844pt>
+File: fig/pracownik_logowanie.png Graphic file (type png)
+
+<use fig/pracownik_logowanie.png>
+Package pdftex.def Info: fig/pracownik_logowanie.png used on input line 232.
+(pdftex.def)             Requested size: 426.79134pt x 155.05162pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 232--233
+ [][] 
+ []
+
+[19pdfTeX warning (ext4): destination with the same identifier (name{figure.2.3
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.236 P
+       o zalogowaniu na konto pracownika w \textit{Panelu administracyjnym} <./
+fig/menu_rozwijanie.png>]
+<fig/pracownik_logowanie_panel.png, id=532, 208.52907pt x 176.15813pt>
+File: fig/pracownik_logowanie_panel.png Graphic file (type png)
+
+<use fig/pracownik_logowanie_panel.png>
+Package pdftex.def Info: fig/pracownik_logowanie_panel.png used on input line 2
+40.
+(pdftex.def)             Requested size: 208.52855pt x 176.15768pt.
+
+<fig/dodawanie_kat.png, id=537, 599.23875pt x 526.21594pt>
+File: fig/dodawanie_kat.png Graphic file (type png)
+
+<use fig/dodawanie_kat.png>
+Package pdftex.def Info: fig/dodawanie_kat.png used on input line 247.
+(pdftex.def)             Requested size: 426.79134pt x 374.78822pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 247--248
+ [][] 
+ []
+
+<fig/edycja_kategorii.png, id=538, 603.0028pt x 632.3625pt>
+File: fig/edycja_kategorii.png Graphic file (type png)
+
+<use fig/edycja_kategorii.png>
+Package pdftex.def Info: fig/edycja_kategorii.png used on input line 253.
+(pdftex.def)             Requested size: 426.79134pt x 447.57176pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 253--254
+ [][] 
+ []
+
+[20pdfTeX warning (ext4): destination with the same identifier (name{figure.2.4
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 \end{figure}
+                  pdfTeX warning (ext4): destination with the same identifier (
+name{figure.2.5}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.256 \end{figure}
+                   <./fig/pracownik_logowanie.png> <./fig/pracownik_logowanie_p
+anel.png>] [21pdfTeX warning (ext4): destination with the same identifier (name
+{figure.2.6}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.257  P
+        anel zarządzania produktami rys.\ref{fig:dod_prod}pozwala na <./fig/do
+dawanie_kat.png>]
+<fig/dodawanie_produktu.png, id=551, 599.23875pt x 635.37375pt>
+File: fig/dodawanie_produktu.png Graphic file (type png)
+
+<use fig/dodawanie_produktu.png>
+Package pdftex.def Info: fig/dodawanie_produktu.png used on input line 269.
+(pdftex.def)             Requested size: 426.79134pt x 452.53398pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 269--270
+ [][] 
+ []
+
+[22pdfTeX warning (ext4): destination with the same identifier (name{figure.2.7
+}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.273 Z
+       akladka \textit{Baza klientów} wyswietla listę kont zarejestrowanyc...
+ <./fig/edycja_kategorii.png>]
+<fig/baza_klientow.png, id=562, 271.0125pt x 226.59656pt>
+File: fig/baza_klientow.png Graphic file (type png)
+
+<use fig/baza_klientow.png>
+Package pdftex.def Info: fig/baza_klientow.png used on input line 280.
+(pdftex.def)             Requested size: 271.01183pt x 226.596pt.
+ [23pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+8}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.284 F
+       ormularz rejstracyjny dla klientów, wymaga: <./fig/dodawanie_produktu.p
+ng>] <fig/rejestracja.png, id=569, 574.39594pt x 207.77625pt>
+File: fig/rejestracja.png Graphic file (type png)
+
+<use fig/rejestracja.png>
+Package pdftex.def Info: fig/rejestracja.png used on input line 292.
+(pdftex.def)             Requested size: 426.79134pt x 154.38608pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 292--293
+ [][] 
+ []
+
+<fig/zarzadzanie_profilem.png, id=571, 572.89032pt x 501.37312pt>
+File: fig/zarzadzanie_profilem.png Graphic file (type png)
+
+<use fig/zarzadzanie_profilem.png>
+Package pdftex.def Info: fig/zarzadzanie_profilem.png used on input line 300.
+(pdftex.def)             Requested size: 426.79134pt x 373.5196pt.
+
+Overfull \hbox (10.7269pt too wide) in paragraph at lines 300--301
+ [][] 
+ []
+
+) (./tex/kody_zrodlowe.tex [24pdfTeX warning (ext4): destination with the same 
+identifier (name{figure.2.9}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 
+    pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+10}) has been already used, duplicate ignored
+
+\AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
+                                                  \fi \fi 
+l.1 
+     <./fig/baza_klientow.png> <./fig/rejestracja.png>]) (./tex/bibrystab.tex
+[25pdfTeX warning (ext4): destination with the same identifier (name{figure.2.1
+1}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
 l.17 \begin {thebibliography}{}
-                                <./fig/menu_rozwijanie.png>] [19
+                                <./fig/zarzadzanie_profilem.png>] [26
 
 ]
 (./dokumentacja_projektu_bd_sklep_internetowy.lof)
@@ -1132,7 +1206,7 @@ l.17 \begin {thebibliography}{}
 
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 41.
- [20
+ [27
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 41.
@@ -1142,17 +1216,17 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 41.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 41.
 Package rerunfilecheck Info: File `dokumentacja_projektu_bd_sklep_internetowy.o
 ut' has not changed.
-(rerunfilecheck)             Checksum: 263C0ECC36265F724F4848397A800C44;1220.
+(rerunfilecheck)             Checksum: 194F5F931A126EC55D95D0406708E2EF;1309.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
  ) 
 Here is how much of TeX's memory you used:
- 12005 strings out of 493054
- 173810 string characters out of 6138326
- 557925 words of memory out of 5000000
- 14962 multiletter control sequences out of 15000+600000
+ 12151 strings out of 493054
+ 176989 string characters out of 6138326
+ 549395 words of memory out of 5000000
+ 15025 multiletter control sequences out of 15000+600000
  19324 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,12n,52p,436b,4061s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 34i,12n,52p,438b,4061s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{c:/texlive/2015/texm
 f-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/
 pl/plit.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/pltt.enc}<c:/texlive
@@ -1167,11 +1241,11 @@ lr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr8.pfb><c:/texlive
 /2015/texmf-dist/fonts/type1/public/pl/plr9.pfb><c:/texlive/2015/texmf-dist/fon
 ts/type1/public/pl/plsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/
 plti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
-Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (20 pages, 477
-984 bytes).
+Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (27 pages, 608
+118 bytes).
 PDF statistics:
- 616 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
- 335 named destinations out of 1000 (max. 500000)
- 146 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 739 PDF objects out of 1000 (max. 8388607)
+ 676 compressed objects within 7 object streams
+ 394 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

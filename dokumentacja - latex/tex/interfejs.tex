@@ -203,7 +203,7 @@ if(isset($gkat) && is_numeric($gkat)) {
 </form>
 \end{lstlisting}
 \end{itemize}
-Menu serwisu dla niezalogowanego użytkownika przedstawia screen \ref{fig:nie_zalogowany} na stronie \pageref{fig:nie_zalogowany}. Dostepne jest 
+Menu serwisu dla niezalogowanego użytkownika przedstawia rysunek \ref{fig:nie_zalogowany} na stronie \pageref{fig:nie_zalogowany}. Dostepne jest 
 \begin{itemize}
 	\item Przejście do strony głównej
 	\item Przeglądanie kategorii oraz produktów 
@@ -224,4 +224,80 @@ Po kliknięciu na kategorii która zawiera podkategorie następuje rozwinięcie 
 	\includegraphics {fig/menu_rozwijanie}
 	\caption{Rozwijanie menu}
 	\label{fig:menu_rozwijalne}
+\end{figure}
+
+Formularz logowania pracownika widoczny na \ref{fig:pracownik_logowanie} na stronie \pageref{fig:pracownik_logowanie}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=15 cm] {fig/pracownik_logowanie}
+	\caption{Formularz logowania dla pracownika}
+	\label{fig:pracownik_logowanie}
+\end{figure}
+Po zalogowaniu na konto pracownika w \textit{Panelu administracyjnym}
+pojawiają sie nowe opcje widoczne  na rysunku \ref{fig:panel_pracownik} na stronie \pageref{fig:panel_pracownik} 
+\begin{figure}[H]
+	\centering
+	\includegraphics {fig/pracownik_logowanie_panel}
+	\caption{Opcje dostępne po zalogowaniu na konto pracownika}
+	\label{fig:panel_pracownik}
+\end{figure}
+Opcja \textit{Dodaj/edytuj kategorie} pozwala na dodawanie kategorii rys.\ref{fig:dod_kat} strona \pageref{fig:dod_kat} lub edycje rys\ref{fig:e_kat} strona \pageref{fig:e_kat}
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=15cm] {fig/dodawanie_kat}
+	\caption{Formularz dodawania kategorii}
+	\label{fig:dod_kat}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=15cm]{fig/edycja_kategorii}
+	\caption{Panel edycji kategorii}
+	\label{fig:e_kat}
+\end{figure}
+ Panel zarządzania produktami rys.\ref{fig:dod_prod}pozwala na
+ \begin{enumerate}
+ 	\item Dodanie nazwy produktu
+ 	\item Dodanie opisu za pomocą zaimpementowanego w projekcie edytora
+ 	\item Wybór kategorii z listy istniejących kategorii
+ 	\item Ustalenie ceny produktu
+ 	\item Określemie ilości sztuk dodawanych do magazynu
+ 	
+ \end{enumerate}
+ 
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=15cm] {fig/dodawanie_produktu}
+	\caption{Formularz dodawania produktu}
+	\label{fig:dod_prod}
+\end{figure}
+Zakladka \textit{Baza klientów} wyswietla listę kont zarejestrowanych klientów z podziałem na \begin{enumerate}
+	\item Klientów indywidualnych
+	\item Konta firmowe
+\end{enumerate}
+Wyświetlane są podstawowe dane, dla klientów indywidualnych: imie, nazwisko. Dla kont firmowych: nazwa firmy i NIP. Jeżeli użytkownik nie uzupełnił danych na swój temat wyświetlony zostanie odpowiednia informacja w nawiasach \{ \}.
+\begin{figure}[H]
+	\centering
+	\includegraphics {fig/baza_klientow}
+	\caption{Baza klientów}
+	\label{fig:baza_klient}
+\end{figure}
+Formularz rejstracyjny dla klientów, wymaga:
+\begin{itemize}
+\item Wybranie typu konta: \textit{Osoba prywatna} lub \textit{Firma}
+\item login - wymagane jest aby był unikalny
+\item hasło	
+\end{itemize}
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=15cm] {fig/rejestracja}
+	\caption{Formularz rejestracji}
+	\label{fig:rejestracja}
+\end{figure}
+Po zalogowaniu pojawi w \textit{Panelu Klienta} pojawia się opcja \textit{Ustawienia konta}
+widoczne na rys.\ref*{fig:profil_zarz} na stronie \pageref{fig:profil_zarz} Możliwa jest edycja podstawowych danych oraz zmiana hasła do konta
+\begin{figure}[H]
+	\centering
+	\includegraphics [width=15cm]{fig/zarzadzanie_profilem}
+	\caption{Formularz zarzadzania profilem użytkownika}
+	\label{fig:profil_zarz}
 \end{figure}
