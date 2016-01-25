@@ -304,85 +304,92 @@ Po stronie sklepu pozostaje wskazanie
 
 \subsection{Procedury wykorzystane w projekcie}
 \begin{enumerate}
-\item \textbf{kategoria\_lista\_podrzednych}
+\item \s!menu_drzewo_kat! 
+Procedura dla danego \s!kategoria_id! zwraca kategorie bezpośrednio podrzędne dla wszystkich kategorii leżących na ścieżce od zdefinionanej argumentem do korzenia. Zapewnia to wyświetlenie w menu sklepu minimalnej listy kategorii niezbędnej do swobodnej nawigacji po drzewie kategorii.
 \begin{lstlisting}[language=SQL]
+CREATE DEFINER=`root`@`localhost` 
+PROCEDURE `menu_drzewo_kat`(IN `pkat_id` INT)
+READS SQL DATA
 BEGIN
-DECLARE n INT;
-SET n=1;
-CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,
-`id\_nadrzednej` int(10) unsigned, `przetworzona` tinyint(1) DEFAULT 0);
-CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(10) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,
-`id\_nadrzednej` int(10) unsigned, `przetworzona` tinyint(1) DEFAULT 0);
-
-INSERT INTO podrzedne SELECT kategoria\_id, nazwa, id\_nadrzednej, 0 FROM kategoria WHERE kategoria\_id=id\_kat;
-
-WHILE n>0 DO
-INSERT INTO podrzedne2 SELECT kategoria\_id, nazwa, id\_nadrzednej, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetworzona=0);
-UPDATE podrzedne SET przetworzona=1;
-INSERT INTO podrzedne SELECT * FROM podrzedne2;
-TRUNCATE TABLE podrzedne2;
-SELECT COUNT(*) FROM podrzedne WHERE przetworzona=0 INTO n;
-END WHILE;
-
-SELECT * FROM podrzedne;
-
-DROP TEMPORARY TABLE podrzedne;
-DROP TEMPORARY TABLE podrzedne2;
-END
-\end{lstlisting}
-\item menu\_drzewo\_kat
-\begin{lstlisting}[language=SQL]
-BEGIN
-DECLARE kat\_id INT;
-IF pkat\_id IS NOT NULL THEN
-SET kat\_id = pkat\_id;
-WHILE kat\_id IS NOT NULL DO
-SELECT * FROM kategoria WHERE id\_nadrzednej=kat\_id;
-SELECT id\_nadrzednej FROM kategoria WHERE kategoria\_id=kat\_id INTO kat\_id;
+DECLARE kat_id INT;
+IF pkat_id IS NOT NULL THEN
+SET kat_id = pkat_id;
+WHILE kat_id IS NOT NULL DO
+SELECT * FROM kategoria WHERE id_nadrzednej=kat_id;
+SELECT id_nadrzednej FROM kategoria 
+WHERE kategoria_id=kat_id INTO kat_id;
 END WHILE;
 END IF;
-SELECT * FROM kategoria WHERE id\_nadrzednej IS NULL;
+SELECT * FROM kategoria WHERE id_nadrzednej IS NULL;
 END
 \end{lstlisting}
-\item produkt\_by\_kategoria
+\item \s!produkt_by_kategoria! 
+Procedura zwraca dane wszystkich produktów należących do kategorii zdefiniowanej jako argument lub do jej podkategorii, dla dowolnego poziomu zagłębienia drzewa.
 \begin{lstlisting}[language=SQL]
 BEGIN
 DECLARE n INT;
 SET n=1;
-CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);
-CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(10) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);
+CREATE TEMPORARY TABLE podrzedne 
+(`kategoria\_id` int(10) unsigned NOT NULL, 
+`przetworzona` tinyint(1) DEFAULT 0);
+CREATE TEMPORARY TABLE podrzedne2 
+(`kategoria\_id` int(10) unsigned NOT NULL, 
+`przetworzona` tinyint(1) DEFAULT 0);
 
 INSERT INTO podrzedne VALUES(id\_kat,0);
 
 WHILE n>0 DO
-INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetworzona=0);
+INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kategoria 
+WHERE id\_nadrzednej IN 
+(SELECT kategoria\_id FROM podrzedne WHERE przetworzona=0);
 UPDATE podrzedne SET przetworzona=1;
 INSERT INTO podrzedne SELECT * FROM podrzedne2;
 TRUNCATE TABLE podrzedne2;
 SELECT COUNT(*) FROM podrzedne WHERE przetworzona=0 INTO n;
 END WHILE;
 
-SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa AS nazwa\_kat  FROM produkt p JOIN kategoria k USING(kategoria\_id) WHERE p.blokada=0 AND k.kategoria\_id IN (SELECT kategoria\_id FROM podrzedne);
+SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa AS nazwa\_kat  
+FROM produkt p JOIN kategoria k USING(kategoria\_id) 
+WHERE p.blokada=0 AND k.kategoria\_id IN 
+(SELECT kategoria\_id FROM podrzedne);
 
 DROP TEMPORARY TABLE podrzedne;
 DROP TEMPORARY TABLE podrzedne2;
 END
-\end{}
+\end{lstlisting}
 \item produkt\_hist
-\begin{verbatim}
+\begin{lstlisting}[language=SQL]
 BEGIN
 DECLARE vprodukt\_id INT;
 DECLARE poprz\_nazwa VARCHAR(50);
 DECLARE poprz\_cena DECIMAL(10,2);
 DECLARE poprz\_opis TEXT;
 DECLARE poprz\_blokada TINYINT(1);
-SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycja WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;
-SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='nazwa' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
-SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='cena' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
-SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='opis' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
-SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='blokada' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycja 
+WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;
+SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_edycja 
+WHERE produkt\_edycja\_id>pprodukt\_edycja\_id 
+AND produkt\_id=vprodukt\_id AND kolumna='nazwa' 
+ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edycja 
+WHERE produkt\_edycja\_id>pprodukt\_edycja\_id 
+AND produkt\_id=vprodukt\_id AND kolumna='cena' 
+ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edycja 
+WHERE produkt\_edycja\_id>pprodukt\_edycja\_id 
+AND produkt\_id=vprodukt\_id AND kolumna='opis' 
+ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_edycja 
+WHERE produkt\_edycja\_id>pprodukt\_edycja\_id 
+AND produkt\_id=vprodukt\_id AND kolumna='blokada' 
+ORDER BY produkt\_edycja\_id ASC LIMIT 1;
 
-SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(poprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_blokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id; 
+SELECT 
+COALESCE(poprz\_nazwa,nazwa) AS nazwa, 
+COALESCE(poprz\_cena,cena) AS cena, 
+COALESCE(poprz\_opis,opis) AS opis, 
+COALESCE(poprz\_blokada,blokada) AS blokada 
+FROM produkt WHERE produkt\_id=vprodukt\_id; 
 END
 \end{lstlisting}
 \end{enumerate}
@@ -392,6 +399,45 @@ Funkcje wykorzystane w projektowanej bazie danych
 \begin{enumerate}
 	\item ostatnia\_produkt\_edycja\_id
 	\begin{lstlisting}[language=SQL]
-	RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\_edycja` WHERE `produkt\_id`=produktid)
+	RETURN (SELECT MAX(`produkt\_edycja\_id`) 
+	FROM `produkt\_edycja` WHERE `produkt\_id`=produktid)
 	\end{lstlisting}
+\end{enumerate}
+
+\subsection{Wyzwalacze wykorzystane w projekcie}
+Wyzwalacze wykorzystane w bazie danych służące zapisywaniu istotnych zmian dokonywanych w tabeli \s!produkt!.
+
+\begin{enumerate}
+\item \s!produkt_insert_hist!
+\begin{lstlisting}[language=SQL]
+CREATE TRIGGER `produkt_insert_hist` AFTER INSERT ON `produkt`
+FOR EACH ROW INSERT INTO produkt_edycja (produkt_id, kolumna, pracownik_id)
+VALUES (NEW.produkt_id, 'dodanie', @pracownikid)
+\end{lstlisting}
+\item \s!produkt_update_hist!
+\begin{lstlisting}[language=SQL]
+CREATE TRIGGER `produkt_update_hist` BEFORE UPDATE ON `produkt`
+FOR EACH ROW BEGIN
+IF NEW.nazwa!=OLD.nazwa THEN
+INSERT INTO produkt_edycja 
+(produkt_id, kolumna, poprz_wartosc, pracownik_id)
+VALUES (NEW.produkt_id, 'nazwa', OLD.nazwa, @pracownikid);
+END IF;
+IF NEW.opis!=OLD.opis THEN
+INSERT INTO produkt_edycja 
+(produkt_id, kolumna, poprz_wartosc, pracownik_id)
+VALUES (NEW.produkt_id, 'opis', OLD.opis, @pracownikid);
+END IF;
+IF NEW.cena!=OLD.cena THEN
+INSERT INTO produkt_edycja 
+(produkt_id, kolumna, poprz_wartosc, pracownik_id)
+VALUES (NEW.produkt_id, 'cena', OLD.cena, @pracownikid);
+END IF;
+IF NEW.blokada!=OLD.blokada THEN
+INSERT INTO produkt_edycja 
+(produkt_id, kolumna, poprz_wartosc, pracownik_id)
+VALUES (NEW.produkt_id, 'blokada', OLD.blokada, @pracownikid);
+END IF;
+END
+\end{lstlisting}
 \end{enumerate}
