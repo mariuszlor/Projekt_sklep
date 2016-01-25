@@ -1,5 +1,5 @@
 \chapter{Projektowanie Bazy Danych}
-Projekt: baza danych dla sklepu internetowego sprzedającego akcesoria kuchenne\\
+Projekt: Przygotowanie Systemu Zarządzania Bazą Danych (dalej SZBD) zawierającego interfejs i bazę danych dla sklepu internetowego zajmującego się sprzedażą akcesorii kuchenych\\
 Obecnie zamawiający SZBD sprzedaje towar na popularnym serwisie aukcyjnym.\\ 
 \section{Sformułowanie celu i zadań}
 \begin{enumerate}
@@ -38,20 +38,48 @@ Do osoby odpowiedzalnej za gromadzenie towaru w paczkę do wysyłki i przekazani
 Informacje potrzebne do generowania raportów przepisywane są do arkusza kalkulacyjnego ręcznie.\\
 Problemy: 
 \begin{enumerate}
-	\item Żmudne wyszukiwanie danych
-	\item Duże ryzyko błędu ludzkiego podczas ręcznego przenoszenia danych 
+	\item Dane wyszukiwane są ręcznie.
+	\item Duże ryzyko błędu ludzkiego podczas ręcznego przenoszenia danych. 
 \end{enumerate}
 
 
 \subsection{Lista tabel w projektowanej bazie}
+
 \begin{enumerate}
-\item kategoria:
+\item \textbf{Kategoria:}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	\# kategoria\_id&int(10)&unsigned&nie&brak&AUTO\_INCREMENT \\
+	nazwa&varchar(30)& - &nie& nieznana& - \\
+	FK id\_nadrzędnej&int(10)&unsigned&tak&null& - \\
+	\hline
+\end{tabular}
+
 \begin{itemize}
 	\item \# kategoria\_id - pole jednoznacznie identyfikujące kategorię
 	\item nazwa - nazwa kategorii może się powtarzać ( np. podkategoria "pozostałe" w różnych kategoriach)
 	\item FK id\_nadrzednej - id kategorii nadrzędnej, kategoriami poziomu najwyższego są te, gdzie id\_ nadrzędnej ma watrość NULL
 \end{itemize}
-\item klient:
+\item \textbf{Klient:}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	klient\_id&int(10)&unsigned&nie&brak&A\_INC \\
+	typ&unum('p' 'f')& - &nie& p& - \\
+	nazwisko&varchar(50)&-&tak&null& - \\
+	imie&varchar(50)&-&tak&null&-\\
+	NIP&bigint(20)&-&tak&null&-\\
+	nazwa\_firmy&varchar(100)&-&tak&null&-\\
+	dom\_adr\_wys&varchar(200)&-&tak&null&-\\
+	login&varchar(50)&-&nie&brak&-\\
+	haslo&varchar(32)&-&nie&brak&-\\
+	\hline
+\end{tabular}
 \begin{itemize}
 	\item \# klient\_id, - pole jednoznacznie identyfikujące klienta
 	\item typ - 'p'- klient indywidualny 'f' -firma
@@ -63,14 +91,40 @@ Problemy:
 	\item login 
 	\item hasło
 	\end{itemize}
-\item pracownik
+\item \textbf{Pracownik}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	pracownik\_id&int(10)&unsigned&nie&brak&AUTO\_INCREMENT \\
+	login&varchar(50)&-&nie&brak&-\\
+	haslo&varchar(32)&-&nie&brak&-\\
+	uprawnienia&varchar(100)&-&nie&brak&-\\
+	\hline
+\end{tabular}
 \begin{itemize}
 	\item \# pracownik\_id - pole jednoznacznie identyfikujące pracownika
 	\item login
 	\item haslo
 	\item uprawnienia	
 	\end{itemize} 
-\item produkt:
+\item \textbf{Produkt}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	produkt\_id&int(10)&unsigned&nie&brak&AUTO\_INCREMENT \\
+	nazwa&varchar(50)&-&nie&brak&-\\
+	kategoria\_id&int(10)&-&tak&null&-\\
+	opis&text&-&nie&brak&-\\
+	stan\_magazyn&int(10)&unsigned&nie&0 \\
+	cena&decimal(10,2)&unsigned&nie&brak&-\\
+	blokada&tinyint(1)&-&nie&0&-\\
+	\hline
+	
+\end{tabular}
 \begin{itemize}
 	\item \# produkt\_id pole jednoznacznie identyfikujące produkt
 	\item nazwa - nazawa produktu wyświetlana klientowi na stronie internetowej, pakującemu produkt w raportach itd
@@ -80,13 +134,23 @@ Problemy:
 	\item cena
 	\item blokada - wyświetlanie i sprzedaż produktu może być wstrzymana
 	\end{itemize} 
-\item transakcja\_produkt\_v
-\begin{itemize}
-	\item FK transakcja\_id
-	\item sztuk
-	\item FK produkt\_edycja\_id
-\end{itemize}
-\item produkt\_edycja
+
+\item \textbf{produkt\_edycja}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	produkt\_edycja\_id&int(10)&unsigned&nie&brak&AUTO\_INCREMENT \\
+	produkt\_id&int(10)&unsigned&nie&brak&-\\
+	kolumna&varchar(15)&-&nie&brak&-\\
+	poprz\_wartosc&text&-&nie&brak&-\\
+	czas\_edycji&timestamp&-&nie&CURRENT&-\\
+	&&&&\_TIMESTAMP&\\
+	pracownik\_id&int(10)&unsigned&nie&brak&-\\
+	\hline
+	
+\end{tabular}
 \begin{itemize}
 	\item \# produkt\_edycja\_id - pole jednoznacznie identyfikujące zmianę (edycję atrybutu lub dodanie) produktu, a więc konkretną wersję konkretnego produktu
 	\item FK produkt\_id - id edytowanego produktu
@@ -95,7 +159,24 @@ Problemy:
 	\item czas\_edycji - czas wprowadzenia zmian
 	\item FK pracownik\_id - id pracownika edytującego lub dodającego produkt
 \end{itemize}
-\item transakcja
+
+\item \textbf{Transakcja}
+
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	transakcja\_id&int(10)&unsigned&nie&brak&AUTO\_INCREMENT \\
+	klient\_id&int(10)&unsigned&tak&null&-\\
+	adres\_wysylki&varchar(200)&-&nie&brak&-\\
+	kwota\_wplacona&decimal(12,2)&-&nie&0.00&-\\
+	status&enum&-&nie&u&-\\
+	&('u','a','p',&&&&\\
+	&'z','w','d')&&&&\\
+	\hline
+	
+\end{tabular}
+
 \begin{itemize}
 	\item \# transakcja\_id pole jednoznacznie identyfikujące transakcję
 	\item FK klient\_id - id zalogowanego klienta który utworzył transakcję lub NULL dla kupującego bez logowania
@@ -103,7 +184,23 @@ Problemy:
 	\item kwota\_wplacona
 	\item status - utworzono/potwierdzono(po wyświeltleniu podsumowania transakcji)/zapłacono/wysłano/dostarczono
 \end{itemize}
+\item \textbf{Transakcja\_produkt\_v}
 
+\begin{tabular}{|l|l|l|l|l|l|} \hline
+	\textbf{Nazwa} & \textbf{Typ} & \textbf{Atrybuty} & \textbf{Null} & \textbf{Ustawienia} & \textbf{Dodatkowo} \\
+	&&&&\textbf{domyslne}&\\
+	\hline
+	transakcja\_id&int(10)&unsigned&nie&brak&-\\
+	sztuk&tinyint(3)&unsigned&nie&brak&-\\
+	produkt\_edycja\_id&int(10)&unsigned&nie&brak&-\\
+	\hline
+	
+\end{tabular}
+\begin{itemize}
+	\item FK transakcja\_id
+	\item sztuk
+	\item FK produkt\_edycja\_id
+\end{itemize}
 \end{enumerate}
 
 
@@ -167,3 +264,98 @@ Użytkownik ma możliwość usunięcia konta z serwisu. w takim przypadku muszą
 
 	
 \section{Definiowanie tabel, wiezów integralnosci, perspektyw}
+
+\subsection{Procedury}
+\begin{enumerate}
+\item \textbf{kategoria\_lista\_podrzednych}
+\begin{verbatim}
+BEGIN
+DECLARE n INT;
+SET n=1;
+CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,
+`id\_nadrzednej` int(10) unsigned, `przetworzona` tinyint(1) DEFAULT 0);
+CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(10) unsigned NOT NULL,`nazwa` varchar(30) COLLATE utf8\_polish\_ci NOT NULL,
+`id\_nadrzednej` int(10) unsigned, `przetworzona` tinyint(1) DEFAULT 0);
+
+INSERT INTO podrzedne SELECT kategoria\_id, nazwa, id\_nadrzednej, 0 FROM kategoria WHERE kategoria\_id=id\_kat;
+
+WHILE n>0 DO
+INSERT INTO podrzedne2 SELECT kategoria\_id, nazwa, id\_nadrzednej, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetworzona=0);
+UPDATE podrzedne SET przetworzona=1;
+INSERT INTO podrzedne SELECT * FROM podrzedne2;
+TRUNCATE TABLE podrzedne2;
+SELECT COUNT(*) FROM podrzedne WHERE przetworzona=0 INTO n;
+END WHILE;
+
+SELECT * FROM podrzedne;
+
+DROP TEMPORARY TABLE podrzedne;
+DROP TEMPORARY TABLE podrzedne2;
+END
+\end{verbatim}
+\item menu\_drzewo\_kat
+\begin{verbatim}
+BEGIN
+DECLARE kat\_id INT;
+IF pkat\_id IS NOT NULL THEN
+SET kat\_id = pkat\_id;
+WHILE kat\_id IS NOT NULL DO
+SELECT * FROM kategoria WHERE id\_nadrzednej=kat\_id;
+SELECT id\_nadrzednej FROM kategoria WHERE kategoria\_id=kat\_id INTO kat\_id;
+END WHILE;
+END IF;
+SELECT * FROM kategoria WHERE id\_nadrzednej IS NULL;
+END
+\end{verbatim}
+\item produkt\_by\_kategoria
+\begin{verbatim}
+BEGIN
+DECLARE n INT;
+SET n=1;
+CREATE TEMPORARY TABLE podrzedne (`kategoria\_id` int(10) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);
+CREATE TEMPORARY TABLE podrzedne2 (`kategoria\_id` int(10) unsigned NOT NULL, `przetworzona` tinyint(1) DEFAULT 0);
+
+INSERT INTO podrzedne VALUES(id\_kat,0);
+
+WHILE n>0 DO
+INSERT INTO podrzedne2 SELECT kategoria\_id, 0 FROM kategoria WHERE id\_nadrzednej IN (SELECT kategoria\_id FROM podrzedne WHERE przetworzona=0);
+UPDATE podrzedne SET przetworzona=1;
+INSERT INTO podrzedne SELECT * FROM podrzedne2;
+TRUNCATE TABLE podrzedne2;
+SELECT COUNT(*) FROM podrzedne WHERE przetworzona=0 INTO n;
+END WHILE;
+
+SELECT p.produkt\_id, p.nazwa, p.kategoria\_id, k.nazwa AS nazwa\_kat  FROM produkt p JOIN kategoria k USING(kategoria\_id) WHERE p.blokada=0 AND k.kategoria\_id IN (SELECT kategoria\_id FROM podrzedne);
+
+DROP TEMPORARY TABLE podrzedne;
+DROP TEMPORARY TABLE podrzedne2;
+END
+\end{verbatim}
+\item produkt\_hist
+\begin{verbatim}
+BEGIN
+DECLARE vprodukt\_id INT;
+DECLARE poprz\_nazwa VARCHAR(50);
+DECLARE poprz\_cena DECIMAL(10,2);
+DECLARE poprz\_opis TEXT;
+DECLARE poprz\_blokada TINYINT(1);
+SELECT produkt\_id INTO vprodukt\_id FROM produkt\_edycja WHERE produkt\_edycja\_id=pprodukt\_edycja\_id;
+SELECT poprz\_wartosc INTO poprz\_nazwa FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='nazwa' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_cena FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='cena' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_opis FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='opis' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+SELECT poprz\_wartosc INTO poprz\_blokada FROM produkt\_edycja WHERE produkt\_edycja\_id>pprodukt\_edycja\_id AND produkt\_id=vprodukt\_id AND kolumna='blokada' ORDER BY produkt\_edycja\_id ASC LIMIT 1;
+
+SELECT COALESCE(poprz\_nazwa,nazwa) AS nazwa, COALESCE(poprz\_cena,cena) AS cena, COALESCE(poprz\_opis,opis) AS opis, COALESCE(poprz\_blokada,blokada) AS blokada FROM produkt WHERE produkt\_id=vprodukt\_id; 
+END
+\end{verbatim}
+\end{enumerate}
+\subsection{Funkcje}
+Funkcje wykorzystane w projektowanej bazie danych
+
+\begin{enumerate}
+	\item ostatnia\_produkt\_edycja\_id
+	\begin{verbatim}
+	RETURN (SELECT MAX(`produkt\_edycja\_id`) FROM `produkt\_edycja` WHERE `produkt\_id`=produktid)
+	\end{verbatim}
+\end{enumerate}
+\chapter{Interfejs - strona internetowa}
