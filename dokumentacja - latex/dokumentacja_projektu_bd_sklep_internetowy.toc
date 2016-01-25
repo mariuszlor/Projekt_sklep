@@ -11,6 +11,5 @@
 \contentsline {subsection}{\numberline {1.2.1}Procedury}{10}{subsection.1.2.1}
 \contentsline {subsection}{\numberline {1.2.2}Funkcje}{12}{subsection.1.2.2}
 \contentsline {chapter}{\numberline {2}Interfejs - strona internetowa}{13}{chapter.2}
-\contentsline {chapter}{\numberline {3}Kody \IeC {\'z}r\IeC {\'o}d\IeC {\l }owe}{18}{chapter.3}
-\contentsline {chapter}{Bibliografia}{19}{chapter*.2}
-\contentsline {chapter}{Spis rysunk\'ow}{20}{chapter*.3}
+\contentsline {chapter}{Bibliografia}{18}{chapter*.2}
+\contentsline {chapter}{Spis rysunk\'ow}{19}{chapter*.3}
