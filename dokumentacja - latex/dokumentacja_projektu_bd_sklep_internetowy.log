@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/W32TeX) (preloaded format=pdflatex 2015.10.11)  25 JAN 2016 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1021,13 +1021,13 @@ Overfull \hbox (136.62225pt too wide) in paragraph at lines 395--396
 
 ) (./tex/interfejs.tex [12]
  2.
-<fig/interfejs.png, id=266, 840.89156pt x 696.35156pt>
+<fig/interfejs.png, id=267, 840.89156pt x 696.35156pt>
 File: fig/interfejs.png Graphic file (type png)
  <use fig/interfejs.png>
-Package pdftex.def Info: fig/interfejs.png used on input line 4.
+Package pdftex.def Info: fig/interfejs.png used on input line 5.
 (pdftex.def)             Requested size: 483.70135pt x 284.52844pt.
 
-Overfull \hbox (67.63692pt too wide) in paragraph at lines 4--5
+Overfull \hbox (67.63692pt too wide) in paragraph at lines 5--6
  [][] 
  []
 
@@ -1046,7 +1046,7 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 (c:/texlive/2015/texmf-dist/tex/latex/listings/lstlang2.sty
 File: lstlang2.sty 2015/06/04 1.6 listings language file
 )
-Underfull \hbox (badness 10000) in paragraph at lines 8--9
+Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
@@ -1059,8 +1059,8 @@ has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.14 include(
-             'class/upr.php'); <./fig/interfejs.png>] [14]
+l.12 session_start(
+                   ); <./fig/interfejs.png>] [14]
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
 )
@@ -1096,29 +1096,29 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 )
 (c:/texlive/2015/texmf-dist/tex/latex/base/utf8.def
 File: utf8.def 2015/09/07 v1.1p UTF-8 support for inputenc
-)
-<fig/menu_nie_zalogowany.png, id=405, 205.5178pt x 475.7775pt>
+) [16]
+<fig/menu_nie_zalogowany.png, id=466, 205.5178pt x 475.7775pt>
 File: fig/menu_nie_zalogowany.png Graphic file (type png)
 
 <use fig/menu_nie_zalogowany.png>
-Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 208.
+Package pdftex.def Info: fig/menu_nie_zalogowany.png used on input line 217.
 (pdftex.def)             Requested size: 205.5173pt x 475.77632pt.
- [16]
-<fig/menu_rozwijanie.png, id=464, 205.5178pt x 448.67625pt>
+
+<fig/menu_rozwijanie.png, id=469, 205.5178pt x 448.67625pt>
 File: fig/menu_rozwijanie.png Graphic file (type png)
 
 <use fig/menu_rozwijanie.png>
-Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 215.
+Package pdftex.def Info: fig/menu_rozwijanie.png used on input line 224.
 (pdftex.def)             Requested size: 205.5173pt x 448.67516pt.
-) (./tex/kody_zrodlowe.tex [17pdfTeX warning (ext4): destination with the same 
-identifier (name{figure.2.2}) has been already used, duplicate ignored
+ [17pdfTeX warning (ext4): destination with the same identifier (name{figure.2.
+2}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.1 
-     <./fig/menu_nie_zalogowany.png>]) (./tex/bibrystab.tex [18pdfTeX warning (
-ext4): destination with the same identifier (name{figure.2.3}) has been already
- used, duplicate ignored
+l.227 \end{figure}
+                   <./fig/menu_nie_zalogowany.png>]) (./tex/kody_zrodlowe.tex)
+(./tex/bibrystab.tex [18pdfTeX warning (ext4): destination with the same identi
+fier (name{figure.2.3}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
@@ -1148,11 +1148,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 41.
 Here is how much of TeX's memory you used:
  12005 strings out of 493054
  173810 string characters out of 6138326
- 557808 words of memory out of 5000000
+ 557925 words of memory out of 5000000
  14962 multiletter control sequences out of 15000+600000
  19324 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 35i,12n,52p,436b,4063s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 35i,12n,52p,436b,4061s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/plms.enc}{c:/texlive/2015/texm
 f-dist/fonts/enc/dvips/pl/plrm.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/
 pl/plit.enc}{c:/texlive/2015/texmf-dist/fonts/enc/dvips/pl/pltt.enc}<c:/texlive
@@ -1168,10 +1168,10 @@ lr10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/plr8.pfb><c:/texlive
 ts/type1/public/pl/plsy8.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/
 plti10.pfb><c:/texlive/2015/texmf-dist/fonts/type1/public/pl/pltt10.pfb>
 Output written on dokumentacja_projektu_bd_sklep_internetowy.pdf (20 pages, 477
-313 bytes).
+984 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 564 compressed objects within 6 object streams
+ 616 PDF objects out of 1000 (max. 8388607)
+ 569 compressed objects within 6 object streams
  335 named destinations out of 1000 (max. 500000)
  146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
