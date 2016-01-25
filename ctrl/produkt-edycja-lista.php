@@ -19,10 +19,14 @@ if(!isset($_GET['kategoria'])) {
 	foreach($kategorie_produkt AS $kategoria_produkt) 
 		if($kategoria_produkt['produktow']>0) $kategorie_produkt_sorted[]=$kategoria_produkt;
 	usort($kategorie_produkt_sorted, build_sorter('nazwa'));
+	$kategorie_produkt_sorted[]=array('kategoria_id'=>'NULL', 'nazwa'=>'Produkty bez kategorii');
 }
-else if(is_numeric($_GET['kategoria'])){
+else if(is_numeric($_GET['kategoria']) OR $_GET['kategoria']=='NULL'){
 	$id_kat = $_GET['kategoria'];
-	$result = $DB->query("SELECT produkt_id, nazwa FROM produkt WHERE kategoria_id=".$id_kat) or DBdie($DB->error);
+	if($_GET['kategoria']=='NULL') 	
+		$result = $DB->query("SELECT produkt_id, nazwa FROM produkt WHERE kategoria_id IS NULL") or DBdie($DB->error);
+	else 
+		$result = $DB->query("SELECT produkt_id, nazwa FROM produkt WHERE kategoria_id=".$id_kat) or DBdie($DB->error);
 	if($result) while($row = $result->fetch_assoc()) {
 		$produkty[$row['produkt_id']]=$row['nazwa'];
 	}

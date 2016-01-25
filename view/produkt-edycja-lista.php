@@ -9,7 +9,7 @@ if(count($kategorie_produkt_sorted)>0) {
 else if(count($produkty)>0) {
 	echo "<h3>Lista produktów:</h3>";
 	foreach($produkty as $key => $value) {
-		echo '<a href="produkt-edycja.html?produkt_id='.$key.'">'.$value.'</a>';
+		echo '<a href="produkt-edycja.html?produkt_id='.$key.'">'.$value.'</a><br />';
 	}
 }
 ?>
