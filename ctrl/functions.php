@@ -29,9 +29,9 @@ function sprawdz_uprawnienia() {
 	if(!is_numeric($id)) return;
 	$DB = Database::instance();
 	$DB->query("SET @pracownikid=".$id);
-	$result = $DB->query("SELECT uprawnienia FROM pracownik WHERE pracownik_id=@pracownikid") or die($DB->error);
-	if($row = $result->fetch_assoc()) {
-		$_SESSION['uprawnienia']=explode(';', $row['uprawnienia']);
+	$result = $DB->query("SELECT uprawnienie FROM pracownik_uprawnienie WHERE pracownik_id=@pracownikid") or die($DB->error);
+	while($row = $result->fetch_assoc()) {
+		$_SESSION['uprawnienia'][]=$row['uprawnienie'];
 	}
 }
 
